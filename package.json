@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/ajwehunt/portfolio/issues"
   },
-  "homepage": "https://github.com/ajwehunt/portfolio#readme"
+  "homepage": "https://github.com/ajwehunt/portfolio#readme",
+  "devDependencies": {
+    "bower": "^1.8.0"
+  }
 }

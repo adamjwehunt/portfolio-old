@@ -423,5 +423,65 @@ h1, h2, h3, h4, h5, h6, button {
 p, a, li {
   font-family: 'Open Sans', sans-serif; }
 
+* {
+  color: #FFF;
+  font-family: 'Open Sans', sans-serif; }
+
 body {
-  background-color: red; }
+  background: #161616; }
+
+.main-wrapper {
+  height: 100%;
+  font-size: calc(2.6em + 2vw); }
+
+.head {
+  position: fixed; }
+
+.head h1 {
+  display: inline-block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  cursor: default;
+  padding: 5px;
+  margin: 13px;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  z-index: 10; }
+
+.title {
+  max-width: 540px;
+  min-width: 320px; }
+
+.panel {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+  height: 105vh; }
+
+#home {
+  background: #fff; }
+
+#home h2, p {
+  color: #161616; }
+
+#home h2 {
+  margin-bottom: 70px;
+  font-size: calc(1.3em + 2vw); }
+
+#about {
+  background: #3fbfbf; }
+
+#projects {
+  background: #bf3f3f; }
+
+#education {
+  background: #7fbf3f; }
+
+#contact {
+  background: #7f3fbf; }
+
+#footer {
+  background: #161616; }

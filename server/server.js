@@ -24,6 +24,6 @@ app.use(express.static('../public'));
 ///Requests///
 
 var port = config.port;
-app.listen(port, function(){
+app.listen(8000, function(){
   console.log('Port ' + port + ' is listening.');
 });

@@ -2,6 +2,7 @@ const gulp = require('gulp');
 const concat = require('gulp-concat');
 const babel = require('gulp-babel');
 const sass = require('gulp-sass');
+const bower = require('gulp-bower');
 
 gulp.task('concat', function(){
   gulp.src(['./public/js/app.js', './public/js/**/*.js'])
@@ -20,12 +21,8 @@ gulp.task('sass', function(){
   .pipe(gulp.dest('./public/dist'))
 })
 
-gulp.task('html', function(){
-  gulp.src('public/index.html')
-    .pipe(gulp.dest('./public/dist'))
-});
 
 gulp.task('default', ['concat', 'sass'])
-gulp.watch(['./public/index.html'])
+
 gulp.watch(['./public/js/**/*.js'], ['concat'])
 gulp.watch(['./public/styles/**/*{.scss,.css}'], ['sass'])
