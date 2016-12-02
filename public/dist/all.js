@@ -1,3 +1,2 @@
-'use strict';
-
-angular.module('adamPortfolio', []);
+// angular.module('adamPortfolio',[])
+"use strict";

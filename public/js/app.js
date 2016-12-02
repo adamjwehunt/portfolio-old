@@ -1,1 +1,1 @@
-angular.module('adamPortfolio',[])
+// angular.module('adamPortfolio',[])
