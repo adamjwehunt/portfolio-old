@@ -608,3 +608,10 @@ body {
 .social-media i {
   font-size: 3em;
   padding: 0 10px; }
+
+@media (min-width: 992px) {
+  .projects-wrapper {
+    padding: 5%;
+    flex-direction: row; }
+  .project {
+    padding: 10px 1.5%; } }
