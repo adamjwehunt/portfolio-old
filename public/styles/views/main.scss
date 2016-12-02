@@ -1,5 +1,5 @@
 body {
-  background: rgb(191, 63, 63);
+  background: #333;
   height: 100%;
 }
 
@@ -114,50 +114,56 @@ body {
 }
 
 #projects {
-  background: #161616;
+  background: #333;
 }
 #projects h1 {
   text-transform: uppercase;
   text-align: center;
   margin: 0px;
-  padding: 60px 0px;
+  padding: 60px 0 0;
   color: #fff;
   font-size: 1.2em;
 }
 
+#projects a {
+  color: #039be5;
+  font-size: 1.4em;
+}
+
+
 .projects-wrapper {
   padding: 10%;
-}
-
-.project-etq {
-  // display: flex;
-
-}
-
-.etq-mobile-images {
   display: flex;
-  overflow-x: scroll;
-
+    justify-content: space-between;
+    flex-direction: column;
 }
 
-.etq-mobile-images img {
-  padding: 10px;
+.project {
+  padding: 10px 0;
 }
 
-.etq-desktop-images {
-margin-bottom: 20px
+.card {
+  background: #ebebeb;
 }
 
-.etq-desktop-images img {
-  width: 100%;
+.card-reveal p {
+  padding: 10px 0;
 }
 
+.project-links {
+  justify-content: space-between;
+  display: flex;
+}
 
 
 #contact {
   background: #336791;
   color: #fff;
   padding-bottom: 30px;
+}
+
+#contact a {
+  color: #FFE7CE;
 }
 
 #contact h1 {
