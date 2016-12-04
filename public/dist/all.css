@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Lato");
+@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -467,21 +467,19 @@ body {
   text-transform: uppercase;
   margin: 10px;
   display: inline-block;
-  text-decoration: none;
-  color: #FFF;
-  padding: 10px;
-  position: relative; }
+  padding: 10px; }
 
 #about {
   background: #fff;
   margin-top: calc(100vh - 115px); }
 
 .portrait {
-  display: block;
   height: 150px;
   background: #bbb;
-  border: 5px solid #bbb;
-  margin-top: -110px; }
+  border: 5px solid #dedbd8;
+  margin-top: -110px;
+  position: absolute;
+  left: 10%; }
 
 .content {
   color: #444;
@@ -493,13 +491,17 @@ body {
 .content h2 {
   text-align: center;
   text-transform: uppercase;
-  padding: 40px 0 30px;
+  padding: 20px 0 8px;
   font-size: 1.3em; }
 
 .content p {
-  padding: 5px 0px;
-  font-size: 1.05em;
-  line-height: 1.2; }
+  padding: 9px 0px;
+  line-height: 1.2;
+  font-weight: 300; }
+
+.content h3 {
+  font-size: 1.3em;
+  padding-bottom: 5px; }
 
 .content ul {
   text-align: center; }
@@ -508,11 +510,28 @@ body {
   padding: 5px 5px;
   display: inline-block; }
 
+.contentdivider {
+  display: none;
+  background: #333;
+  width: 1px; }
+
 .content hr {
   margin-top: 5vh; }
 
 .icon {
   height: 30px; }
+
+.content-tech {
+  display: flex;
+  flex-wrap: wrap; }
+
+.content-tech div {
+  background-color: #336791;
+  color: #ddd;
+  padding: .3rem 1rem;
+  border-radius: 2rem;
+  font-size: .9rem;
+  margin: 0 2px 2px 0; }
 
 #projects {
   background: #333; }
@@ -521,16 +540,16 @@ body {
   text-transform: uppercase;
   text-align: center;
   margin: 0px;
-  padding: 60px 0 0;
+  padding: 50px 0 10px;
   color: #fff;
-  font-size: 1.2em; }
+  font-size: 1.3em; }
 
 #projects a {
   color: #039be5;
   font-size: 1.4em; }
 
 .projects-wrapper {
-  padding: 10%;
+  padding: 5%;
   display: flex;
   justify-content: space-between;
   flex-direction: column; }
@@ -539,7 +558,7 @@ body {
   padding: 10px 0; }
 
 .card {
-  background: #ebebeb; }
+  background: #dedbd8; }
 
 .card-reveal p {
   padding: 10px 0; }
@@ -548,13 +567,21 @@ body {
   justify-content: space-between;
   display: flex; }
 
+.card .card-content {
+  padding: 15px 20px 20px;
+  border-radius: 0 0 2px 2px; }
+
+.card .card-title {
+  margin-bottom: 10px;
+  font-family: 'Lato', sans-serif; }
+
 #contact {
   background: #336791;
   color: #fff;
   padding-bottom: 30px; }
 
 #contact a {
-  color: #FFE7CE; }
+  color: #dedbd8; }
 
 #contact h1 {
   padding-top: 60px;
@@ -575,17 +602,18 @@ body {
   max-width: 65em;
   overflow: hidden; }
 
+.contactinfo h2 {
+  text-transform: uppercase;
+  font-size: 1.1em;
+  letter-spacing: 0.1em; }
+
 .email {
   width: 100%;
   margin-bottom: 30px;
   display: inline-block;
   overflow: hidden;
-  white-space: nowrap; }
-
-.email h2 {
-  text-transform: uppercase;
-  font-size: 1.1em;
-  letter-spacing: 0.1em; }
+  white-space: nowrap;
+  margin-top: 15px; }
 
 .email h3 {
   font-weight: 100;
@@ -600,18 +628,67 @@ body {
   white-space: nowrap; }
 
 .social-media h2 {
-  text-transform: uppercase;
-  font-size: 1.1em;
-  letter-spacing: 0.1em;
   margin-top: 10px; }
 
 .social-media i {
   font-size: 3em;
   padding: 0 10px; }
 
-@media (min-width: 992px) {
+#copyright h2 {
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  font-weight: 100; }
+
+@media (min-width: 768px) {
+  #home h1 {
+    font-size: 1.3em; }
+  #home a {
+    font-size: 1.2em; }
+  .portrait {
+    height: 200px;
+    margin-top: -150px; }
+  .content {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 10% 50px; }
+  .aboutme {
+    width: 45%;
+    padding-top: 60px; }
+  .tech {
+    width: 45%; }
+  .content hr {
+    display: none; }
+  .contentdivider {
+    display: block; }
+  .aboutme h3 {
+    font-size: 2em; }
+  .aboutme p {
+    font-size: 1.4em; }
+  .tech h2 {
+    text-align: left; }
+  .tech ul {
+    text-align: left; }
+  .icon {
+    height: 35px; }
+  #projects h1 {
+    font-size: 1.8em; }
   .projects-wrapper {
     padding: 5%;
     flex-direction: row; }
   .project {
-    padding: 10px 1.5%; } }
+    padding: 10px 1.5%; }
+  .contactinfo {
+    display: flex; }
+  #contact hr {
+    margin-bottom: 50px; }
+  #contact h1 {
+    font-size: 1.8em; }
+  .contactinfo h2 {
+    text-transform: uppercase;
+    font-size: 1.3em;
+    letter-spacing: 0.1em; }
+  .social-media i {
+    font-size: 3.5em; }
+  .email h3 {
+    font-size: 1.3em; } }
