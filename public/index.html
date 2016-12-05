@@ -14,8 +14,8 @@
   </head>
   <body>
 
-    <header class='head'>
-      <h1>Adam Wehunt</h1>
+    <header class='navbar'>
+      <h1 onclick='scrollTo(0)'>Adam Wehunt</h1>
     </header>
 
     <div class='main-wrapper'>
@@ -23,8 +23,8 @@
         <div class='title'>
           <h1>Full Stack Developer · UX Designer · Internet Enthusiast </h1>
           <br>
-          <a href='#contact'>Contact</a>
-          <a href='#projects'>Portfolio</a>
+          <a onclick="scrollTo('#contact')">Contact</a>
+          <a onclick="scrollTo('#projects')">Portfolio</a>
         </div>
       </section>
       <section class='panel' id='about'>
@@ -159,9 +159,9 @@
                   <p>• Cloned https://www.etq-amsterdam.com Focused on mobile design and backend product management.</p><p>• Features clean and functional animations to navigate through the site.</p>
                 </div>
                 <div class="content-photos">
-                  <!-- <img class="materialboxed" src="./img/etq/mobile1.png">
-                  <img class="materialboxed" src="./img/etq/mobile2.png">
-                  <img class="materialboxed" src="./img/etq/mobile3.png"> -->
+                  <img src="./img/etq/mobile1.png">
+                  <img src="./img/etq/mobile2.png">
+                  <img src="./img/etq/mobile3.png">
 
 
                 </div>
@@ -185,7 +185,11 @@
                 <div class='content-tech'>
                   <div>ReactJs</div><div>NodeJs</div><div>Express</div><div>SQL</div>
                 </div>
-                <p>• Worked with a group to clone Lyft.com and integrated the functionality of Lyft's Mobile App Into a Browser.</p><p>• Learned and implemented ReactJS to complete this project in two weeks.</p>
+                <p>• Worked with a 4-person group to clone Lyft.com and integrated the functionality of Lyft's Mobile App into a browser.</p><p>• Learned and implemented ReactJS to complete this project in two weeks.</p>
+                <div class="content-photos">
+                  <img src="./img/shyft/scrnsht1.png">
+
+                </div>
               </div>
             </div>
           </div>
@@ -209,7 +213,22 @@
             </div>
           </div>
         </div>
-      </footer>
+        <div class="sendmessage" onclick="scrollTo('#copyright')">
+          <ul class="collapsible">
+            <li>
+              <div class="collapsible-header">Send me a Message</div>
+              <div class="collapsible-body">
+                <form method="POST" action="http://formspree.io/adamjwehunt@gmail.com">
+                <input type="email" name="email" placeholder="Your email">
+                <input type="hidden" name="_next" value="#" />
+                <textarea name="message" placeholder="Your message"></textarea>
+                <button class='messagebutton' type="submit">Send</button>
+                </form>
+              </div>
+            </li>
+          </ul>
+        </div>
+       </footer>
       <footer class='panel' id='copyright'>
         <h2>© 2016-2017 Adam Wehunt</h2>
       </footer>
@@ -217,10 +236,7 @@
 
 
 
-<!--
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
-    <script src="https://code.angularjs.org/1.5.8/angular-animate.js"></script> -->
+
     <script
   src="https://code.jquery.com/jquery-3.1.1.min.js"
   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
