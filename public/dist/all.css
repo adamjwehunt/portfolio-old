@@ -562,7 +562,8 @@ body {
 
 .content-photos img {
   height: 250px;
-  padding: 10px 10px 10px 0; }
+  padding: 10px 10px 10px 0;
+  max-width: 100%; }
 
 .projects-wrapper {
   padding: 5%;
