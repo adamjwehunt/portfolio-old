@@ -1,7 +1,7 @@
 $(document).ready(function(){
-
-var navBar = $('.navbar'),
-    sendMessage = $('.sendmessage');
+//
+// var navBar = $('.navbar'),
+//     sendMessage = $('.sendmessage');
     // sendMessageExpand = $('.sendmessage .expand');
 
 
@@ -9,16 +9,16 @@ var navBar = $('.navbar'),
 
 
 
+  //
+  // var sel = "#scr-home";
+  // var perc = 0;
 
-  var sel = "#scr-home";
-  var perc = 0;
-
-  $(document).scroll(function (e) {
-
-    var scroll = $(this).scrollTop();
-    var anchor = $("#about").offset().top;
-
-    perc = scroll / $(document).innerHeight();
+  // $(document).scroll(function (e) {
+    //
+    // var scroll = $(this).scrollTop();
+    // var anchor = $("#about").offset().top;
+    //
+    // perc = scroll / $(document).innerHeight();
 
     // update dependent classes
 
@@ -27,15 +27,15 @@ var navBar = $('.navbar'),
 
     // change navbar
 
-    if (scroll > anchor && sel == "#scr-home") {
-      console.log("change");
-      $('.navbar').addClass("minimize");
-
-    } else if (scroll < anchor && sel != "#scr-home") {
-      console.log("change2");
-      $('.navbar').removeClass("minimize");
-
-    }
+    // if (scroll > anchor && sel == "#scr-home") {
+    //   console.log("change");
+    //   $('.navbar').addClass("minimize");
+    //
+    // } else if (scroll < anchor && sel != "#scr-home") {
+    //   console.log("change2");
+    //   $('.navbar').removeClass("minimize");
+    //
+    // }
     //
     // var set = function(id) {
     //   if (sel == id) return;
@@ -56,7 +56,7 @@ var navBar = $('.navbar'),
     //   set("#scr-contact");
     // }
 
-  });
+  // });
 
   // $(".btn").mouseover(function() {
   //   $(this).addClass("knockout");

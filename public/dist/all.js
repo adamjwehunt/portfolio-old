@@ -1,58 +1,62 @@
-'use strict';
+"use strict";
 
 // angular.module('adamPortfolio',[])
 
 $(document).ready(function () {
-
-  var navBar = $('.navbar'),
-      sendMessage = $('.sendmessage');
+  //
+  // var navBar = $('.navbar'),
+  //     sendMessage = $('.sendmessage');
   // sendMessageExpand = $('.sendmessage .expand');
 
 
-  var sel = "#scr-home";
-  var perc = 0;
+  //
+  // var sel = "#scr-home";
+  // var perc = 0;
 
-  $(document).scroll(function (e) {
+  // $(document).scroll(function (e) {
+  //
+  // var scroll = $(this).scrollTop();
+  // var anchor = $("#about").offset().top;
+  //
+  // perc = scroll / $(document).innerHeight();
 
-    var scroll = $(this).scrollTop();
-    var anchor = $("#about").offset().top;
+  // update dependent classes
 
-    perc = scroll / $(document).innerHeight();
+  // $(".nav, .dark-rect").css("background", "hsl(" + perc * 255 + ", 50%, 50%)");
+  // $(".knockout").css("color", "hsl(" + perc * 255 + ", 50%, 50%)");
 
-    // update dependent classes
+  // change navbar
 
-    // $(".nav, .dark-rect").css("background", "hsl(" + perc * 255 + ", 50%, 50%)");
-    // $(".knockout").css("color", "hsl(" + perc * 255 + ", 50%, 50%)");
+  // if (scroll > anchor && sel == "#scr-home") {
+  //   console.log("change");
+  //   $('.navbar').addClass("minimize");
+  //
+  // } else if (scroll < anchor && sel != "#scr-home") {
+  //   console.log("change2");
+  //   $('.navbar').removeClass("minimize");
+  //
+  // }
+  //
+  // var set = function(id) {
+  //   if (sel == id) return;
+  //   $("[id^='scr-']").removeClass("btn-sel");
+  //   $(id).addClass("btn-sel");
+  //   sel = id;
+  // }
 
-    // change navbar
+  // set selected page
 
-    if (scroll > anchor && sel == "#scr-home") {
-      console.log("change");
-      $('.navbar').addClass("minimize");
-    } else if (scroll < anchor && sel != "#scr-home") {
-      console.log("change2");
-      $('.navbar').removeClass("minimize");
-    }
-    //
-    // var set = function(id) {
-    //   if (sel == id) return;
-    //   $("[id^='scr-']").removeClass("btn-sel");
-    //   $(id).addClass("btn-sel");
-    //   sel = id;
-    // }
+  // if (scroll < $("#about").offset().top) {
+  //   set("#scr-home");
+  // } else if (scroll < $("#portfolio").offset().top) {
+  //   set("#scr-about");
+  // } else if (scroll < $("#contact").offset().top) {
+  //   set("#scr-portfolio");
+  // } else {
+  //   set("#scr-contact");
+  // }
 
-    // set selected page
-
-    // if (scroll < $("#about").offset().top) {
-    //   set("#scr-home");
-    // } else if (scroll < $("#portfolio").offset().top) {
-    //   set("#scr-about");
-    // } else if (scroll < $("#contact").offset().top) {
-    //   set("#scr-portfolio");
-    // } else {
-    //   set("#scr-contact");
-    // }
-  });
+  // });
 
   // $(".btn").mouseover(function() {
   //   $(this).addClass("knockout");
