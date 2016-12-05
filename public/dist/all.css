@@ -417,14 +417,14 @@ textarea {
 [type="search"]::-webkit-search-decoration {
   -webkit-appearance: none; }
 
-p, a, h1, h2 {
+p, a, h1, h2, h3 {
   font-family: 'Lato', sans-serif; }
 
 body {
   background: #333;
   height: 100%; }
 
-.head {
+.navbar {
   position: fixed;
   z-index: 2;
   background: #bf3f3f;
@@ -433,11 +433,15 @@ body {
   width: 100%;
   color: #FFF; }
 
-.head h1 {
+.navbar h1 {
   padding: 5px;
   margin: 13px;
   font-size: 1.2em;
   text-transform: uppercase; }
+
+.navbar.minimize h1 {
+  padding: 0 5px;
+  margin: 10px 13px; }
 
 .panel {
   position: relative;
@@ -484,9 +488,8 @@ body {
 .content {
   color: #444;
   margin: 0 auto;
-  padding: 10px 10%;
-  text-align: right;
-  padding-bottom: 50px; }
+  padding: 30px 10%;
+  text-align: right; }
 
 .content h2 {
   text-align: center;
@@ -497,10 +500,14 @@ body {
 .content p {
   padding: 9px 0px;
   line-height: 1.2;
-  font-weight: 300; }
+  font-weight: 300;
+  font-size: 1.2em; }
+
+.tech p {
+  font-size: 1em; }
 
 .content h3 {
-  font-size: 1.3em;
+  font-size: 1.5em;
   padding-bottom: 5px; }
 
 .content ul {
@@ -542,11 +549,20 @@ body {
   margin: 0px;
   padding: 50px 0 10px;
   color: #fff;
-  font-size: 1.3em; }
+  font-size: 1.5em; }
 
 #projects a {
   color: #039be5;
   font-size: 1.4em; }
+
+.content-photos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.content-photos img {
+  height: 250px;
+  padding: 10px 10px 10px 0; }
 
 .projects-wrapper {
   padding: 5%;
@@ -566,6 +582,9 @@ body {
 .project-links {
   justify-content: space-between;
   display: flex; }
+
+i.right {
+  font-size: 1.6em; }
 
 .card .card-content {
   padding: 15px 20px 20px;
@@ -587,7 +606,7 @@ body {
   padding-top: 60px;
   text-align: center;
   margin-top: 0;
-  font-size: 1.6em; }
+  font-size: 1.7em; }
 
 #contact hr {
   width: 100px;
@@ -596,11 +615,10 @@ body {
 .contactinfo {
   width: 100%;
   position: relative;
-  margin-left: auto;
-  margin-right: auto;
   text-align: center;
   max-width: 65em;
-  overflow: hidden; }
+  overflow: hidden;
+  margin: 40px auto 20px auto; }
 
 .contactinfo h2 {
   text-transform: uppercase;
@@ -609,7 +627,7 @@ body {
 
 .email {
   width: 100%;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   display: inline-block;
   overflow: hidden;
   white-space: nowrap;
@@ -617,7 +635,7 @@ body {
 
 .email h3 {
   font-weight: 100;
-  font-size: 1.1em;
+  font-size: 1.2em;
   line-height: 1.2; }
 
 .social-media {
@@ -628,11 +646,54 @@ body {
   white-space: nowrap; }
 
 .social-media h2 {
-  margin-top: 10px; }
+  margin-top: 10px;
+  margin-bottom: 10px; }
 
 .social-media i {
-  font-size: 3em;
+  font-size: 3.3em;
   padding: 0 10px; }
+
+.sendmessage {
+  padding: 0 10%;
+  margin: 25px 0 80px 0;
+  font-family: 'Lato', sans-serif; }
+
+.collapsible {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  box-shadow: none; }
+
+.collapsible-header {
+  padding: 15px 40px;
+  width: auto;
+  text-align: center;
+  cursor: pointer;
+  display: block;
+  min-height: 0rem;
+  padding: 0 1rem;
+  background-color: transparent;
+  border-bottom: 1px solid #ddd;
+  font-size: 1.2em;
+  margin: auto;
+  width: 240px;
+  border: 1px solid;
+  font-weight: 300; }
+
+.collapsible-body {
+  border: 1px solid #ddd;
+  margin-top: 10px;
+  box-sizing: border-box; }
+
+textarea {
+  height: 10vh; }
+
+.messagebutton {
+  background: #dedbd8;
+  color: #336791;
+  margin: 15px 0 0;
+  height: 30px;
+  width: 80px; }
 
 #copyright h2 {
   color: #fff;
@@ -640,7 +701,10 @@ body {
   padding: 20px 0;
   font-weight: 100; }
 
-@media (min-width: 768px) {
+.navbar {
+  transition: 0.5s; }
+
+@media (min-width: 900px) {
   #home h1 {
     font-size: 1.3em; }
   #home a {
@@ -691,4 +755,6 @@ body {
   .social-media i {
     font-size: 3.5em; }
   .email h3 {
-    font-size: 1.3em; } }
+    font-size: 1.3em; }
+  .sendmessage {
+    padding: 0 25%; } }
