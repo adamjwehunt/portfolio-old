@@ -1,35 +1,29 @@
+
 body {
   background: #333;
   height: 100%;
 }
 
-.main-wrapper {
-  // height: 100%;
-  // font-size: calc(2.6em + 2vw);
-}
-
 .navbar {
   position: fixed;
   z-index: 2;
-  background: rgb(191, 63, 63);
+  background: rgb(72, 130, 127);
   top: 0;
   left: 0;
   width: 100%;
   color: #FFF;
 }
 
-
 .navbar h1 {
   padding: 5px;
   margin: 13px;
-  font-size: 1.2em;
+  font-size: 1.1em;
   text-transform: uppercase;
 }
 
 .navbar.minimize  h1{
   padding: 0 5px;
   margin: 10px 13px;
-
 }
 
 .panel {
@@ -38,7 +32,7 @@ body {
 }
 
 #home {
-  background: rgb(191, 63, 63);
+  background: rgb(72, 130, 127);;
   position: fixed;
   height: 100vh;
   width: 100%;
@@ -65,7 +59,6 @@ body {
   margin: 10px;
   display: inline-block;
   padding: 10px;
-
 }
 
 #about {
@@ -75,11 +68,11 @@ body {
 
 .portrait {
   height: 150px;
-      background: #bbb;
-      border: 5px solid #dedbd8;
-      margin-top: -110px;
-      position: absolute;
-      left: 10%;
+  background: #bbb;
+  border: 5px solid #dedbd8;
+  margin-top: -110px;
+  position: absolute;
+  left: 10%;
 }
 
 .content {
@@ -96,22 +89,16 @@ body {
   font-size: 1.3em;
 }
 
-
 .content p {
   padding: 9px 0px;
   line-height: 1.2;
   font-weight: 300;
   font-size: 1.2em;
-
-
 }
 
 .tech p {
   font-size: 1em;
-
 }
-
-
 
 .content h3 {
   font-size: 1.5em;
@@ -121,6 +108,7 @@ body {
 .content ul {
   text-align: center;
 }
+
 .content li {
   padding: 5px 5px;
   display: inline-block;
@@ -129,7 +117,7 @@ body {
 .contentdivider {
   display: none;
   background: #333;
-width: 1px;
+  width: 1px;
 }
 
 .content hr {
@@ -139,24 +127,25 @@ width: 1px;
 .icon {
   height: 30px;
 }
+
 .content-tech {
   display: flex;
   flex-wrap: wrap;
-
 }
+
 .content-tech div {
   background-color: #336791;
-color: #ddd;
-padding: .3rem 1rem;
-border-radius: 2rem;
-font-size: .9rem;
-margin: 0 2px 2px 0;
-
+  color: #ddd;
+  padding: .3rem 1rem;
+  border-radius: 2rem;
+  font-size: .9rem;
+  margin: 0 2px 2px 0;
 }
 
 #projects {
   background: #333;
 }
+
 #projects h1 {
   text-transform: uppercase;
   text-align: center;
@@ -173,22 +162,22 @@ margin: 0 2px 2px 0;
 
 .content-photos {
   display: flex;
-flex-wrap: wrap;
-justify-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .content-photos img {
   height: 250px;
   padding: 10px 10px 10px 0;
   max-width: 100%;
-
 }
 
 .projects-wrapper {
   padding: 5%;
+  padding-bottom: 10%;
   display: flex;
-    justify-content: space-between;
-    flex-direction: column;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 .project {
@@ -206,28 +195,25 @@ justify-content: center;
 .project-links {
   justify-content: space-between;
   display: flex;
-
 }
 
 i.right {
   font-size: 1.6em;
-
 }
 
 .card .card-content {
-    padding: 15px 20px 20px;
-    border-radius: 0 0 2px 2px;
+  padding: 15px 20px 20px;
+  border-radius: 0 0 2px 2px;
 }
 
 .card .card-title {
   margin-bottom: 10px;
-    font-family: 'Lato', sans-serif;
-
+  font-family: 'Lato', sans-serif;
 }
 
 
 #contact {
-  background: #336791;
+  background: #795548;
   color: #fff;
   padding-bottom: 30px;
 }
@@ -251,125 +237,135 @@ i.right {
 .contactinfo {
   width: 100%;
   position: relative;
-
   text-align: center;
   max-width: 65em;
   overflow: hidden;
-      margin: 40px auto 20px auto;
+  margin: 40px auto 20px auto;
 }
 
 .contactinfo h2 {
   text-transform: uppercase;
-      font-size: 1.1em;
-      letter-spacing: 0.1em;
+  font-size: 1.1em;
+  letter-spacing: 0.1em;
 }
 
 .email {
   width: 100%;
-margin-bottom: 40px;
-display: inline-block;
-    overflow: hidden;
-    white-space: nowrap;
-    margin-top: 15px;
-
+  margin-bottom: 40px;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-top: 15px;
 }
-
 
 .email h3 {
   font-weight: 100;
-font-size: 1.2em;
-line-height: 1.2;
-
+  font-size: 1.2em;
+  line-height: 1.2;
 }
 
 .social-media {
   width: 100%;
-margin-bottom: 30px;
-display: inline-block;
-    overflow: hidden;
-    white-space: nowrap;
+  margin-bottom: 30px;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .social-media h2 {
-
-      margin-top: 10px;
-      margin-bottom: 10px;
-
-    }
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 
 .social-media i {
   font-size: 3.3em;
-      padding: 0 10px;
-    }
+  padding: 0 10px;
+}
 
-    .sendmessage {
-      padding: 0 10%;
-margin: 25px 0 80px 0;
-font-family: 'Lato', sans-serif;
-
-    }
+.sendmessage {
+  padding: 0 10%;
+  margin: 25px 0 30px 0;
+  font-family: 'Lato', sans-serif;
+}
 
 
 .collapsible {
   border-top: none;
-border-right: none;
-border-left: none;
-box-shadow: none;
-
+  border-right: none;
+  border-left: none;
+  box-shadow: none;
 }
 
-    .collapsible-header {
-      padding: 15px 40px;
-width: auto;
-text-align: center;
-cursor: pointer;
-display: block;
-min-height: 0rem;
-padding: 0 1rem;
-background-color: transparent;
-border-bottom: 1px solid #ddd;
-font-size: 1.2em;
-margin: auto;
-width: 240px;
-border: 1px solid;
-font-weight: 300;
+.collapsible-header {
+  padding: 15px 40px;
+  width: auto;
+  text-align: center;
+  cursor: pointer;
+  display: block;
+  min-height: 0rem;
+  padding: 0 1rem;
+  background-color: transparent;
+  border-bottom: 1px solid #ddd;
+  font-size: 1.2em;
+  margin: auto;
+  width: 240px;
+  border: 1px solid;
+  font-weight: 300;
+}
 
-    }
-
-  .collapsible-body {
-    border: 1px solid #ddd;
-margin-top: 10px;
-box-sizing: border-box;
-  }
+.collapsible-body {
+  border: 1px solid #ddd;
+  margin-top: 10px;
+  box-sizing: border-box;
+}
 
 textarea {
   height: 10vh;
-
 }
 
 .messagebutton {
   background: #dedbd8;
-color: #336791;
-margin: 15px 0 0;
-height: 30px;
-width: 80px;
+  color: #336791;
+  margin: 15px 0 0;
+  height: 30px;
+  width: 80px;
+}
 
+.btn {
+  padding: 0 1rem;
+  background-color: rgb(72, 130, 127);
+  margin: 15px 0 0;
+
+}
+
+.resume {
+  text-align: center;
+  font-size: 1.1em;
+  margin-bottom: 40px;
 }
 
 #copyright h2 {
   color: #fff;
   text-align: center;
-    padding: 20px 0;
-    font-weight: 100;
+  padding: 20px 0;
+  font-weight: 300;
+}
 
-
+.totop {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 3em;
+  margin: 5px;
+  color: #dedbd8;
+  cursor: pointer;
 }
 
 /////////////// Animations ///////////////////
 
 .navbar {
   transition: 0.5s;
-
 }
 
 
@@ -382,36 +378,34 @@ width: 80px;
 
   #home h1 {
     font-size: 1.3em;
-
   }
 
   #home a {
     font-size: 1.2em;
-
   }
 
   .portrait {
     height: 200px;
     margin-top: -150px;
-
   }
 
   .content {
     display: flex;
-justify-content: space-between;
-padding: 50px 10% 50px;
-
+    justify-content: space-between;
+    padding: 50px 10% 50px;
   }
 
   .aboutme {
     width: 45%;
     padding-top: 60px;
-
   }
 
   .tech {
     width: 45%;
+  }
 
+  .tech p {
+    font-size: 1.2em;
   }
 
   .content hr {
@@ -424,7 +418,6 @@ padding: 50px 10% 50px;
 
   .aboutme h3 {
     font-size: 2em;
-
   }
 
   .aboutme p {
@@ -433,25 +426,22 @@ padding: 50px 10% 50px;
 
   .tech h2 {
     text-align: left;
-
   }
 
   .tech ul {
     text-align: left;
-
   }
 
   .icon {
     height: 35px;
-
   }
-
 
   #projects h1 {
     font-size: 1.8em;
   }
+
   .projects-wrapper {
-        padding: 5%;
+    padding: 5%;
     flex-direction: row;
   }
 
@@ -461,36 +451,32 @@ padding: 50px 10% 50px;
 
   .contactinfo {
     display: flex;
-
   }
+
   #contact hr {
     margin-bottom: 50px
   }
 
   #contact h1 {
-
     font-size: 1.8em;
   }
 
   .contactinfo h2 {
     text-transform: uppercase;
-        font-size: 1.3em;
-        letter-spacing: 0.1em;
+    font-size: 1.3em;
+    letter-spacing: 0.1em;
   }
 
   .social-media i {
     font-size: 3.5em;
-
   }
 
   .email h3 {
     font-size: 1.3em;
-}
+  }
 
-.sendmessage {
-  padding: 0 25%;
-
-}
-
+  .sendmessage {
+    padding: 0 25%;
+  }
 
 }
