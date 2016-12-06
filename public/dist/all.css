@@ -435,8 +435,8 @@ body {
 
 .navbar h1 {
   padding: 5px;
-  margin: 13px;
-  font-size: 1em;
+  margin: 7px;
+  font-size: 1.1em;
   text-transform: uppercase; }
 
 .navbar.minimize h1 {
@@ -457,7 +457,7 @@ body {
   color: #FFF; }
 
 #home .title {
-  margin-top: 35vh;
+  margin-top: calc(6em + 20vw);
   width: 100%;
   text-align: center; }
 
@@ -476,7 +476,7 @@ body {
 
 #about {
   background: #fff;
-  margin-top: calc(100vh - 74px); }
+  margin-top: calc(100vh - 61px); }
 
 .portrait {
   height: 150px;
@@ -508,7 +508,8 @@ body {
   font-size: 1em; }
 
 .content h3 {
-  font-size: 2em; }
+  font-size: 2em;
+  padding-bottom: 10px; }
 
 .content ul {
   text-align: center; }
@@ -636,7 +637,7 @@ i.right {
   margin-top: 15px; }
 
 .email h3 {
-  font-weight: 100;
+  font-weight: 300;
   font-size: 1.2em;
   line-height: 1.2; }
 
