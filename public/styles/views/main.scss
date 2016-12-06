@@ -7,7 +7,7 @@ body {
 .navbar {
   position: fixed;
   z-index: 2;
-  background: rgb(72, 130, 127);
+  background: #333;
   top: 0;
   left: 0;
   width: 100%;
@@ -17,7 +17,7 @@ body {
 .navbar h1 {
   padding: 5px;
   margin: 13px;
-  font-size: 1.1em;
+  font-size: 1em;
   text-transform: uppercase;
 }
 
@@ -32,7 +32,7 @@ body {
 }
 
 #home {
-  background: rgb(72, 130, 127);;
+  background: #354d5a;
   position: fixed;
   height: 100vh;
   width: 100%;
@@ -213,7 +213,7 @@ i.right {
 
 
 #contact {
-  background: #795548;
+  background: #a02929;
   color: #fff;
   padding-bottom: 30px;
 }
@@ -333,7 +333,7 @@ textarea {
 
 .btn {
   padding: 0 1rem;
-  background-color: rgb(72, 130, 127);
+  background-color: #354d5a;
   margin: 15px 0 0;
 
 }
@@ -375,6 +375,10 @@ textarea {
 /////////////// @media querys  //////////////////
 
 @media (min-width : 900px) {
+
+  .navbar h1 {
+  font-size: 1.4em;
+  }
 
   #home h1 {
     font-size: 1.3em;
