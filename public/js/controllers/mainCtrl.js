@@ -1,34 +1,34 @@
 $(document).ready(function(){
+
+// var navBar = $('.navbar');
 //
-// var navBar = $('.navbar'),
-//     sendMessage = $('.sendmessage');
-    // sendMessageExpand = $('.sendmessage .expand');
-
-
-
-
-
-
-  //
-  // var sel = "#scr-home";
-  // var perc = 0;
+//
+//
+//
+//
+//
+//
+//   var sel = "#scr-home";
+//   var perc = 0;
 
   // $(document).scroll(function (e) {
-    //
     // var scroll = $(this).scrollTop();
+    //
     // var anchor = $("#about").offset().top;
     //
     // perc = scroll / $(document).innerHeight();
 
     // update dependent classes
 
-    // $(".nav, .dark-rect").css("background", "hsl(" + perc * 255 + ", 50%, 50%)");
+    // $(".navbar").css("background", "hsl(" + perc * 51 + ", 40%, 40%)");
     // $(".knockout").css("color", "hsl(" + perc * 255 + ", 50%, 50%)");
 
     // change navbar
 
     // if (scroll > anchor && sel == "#scr-home") {
     //   console.log("change");
+    //   console.log($(this).scrollTop());
+    //   console.log($(document).innerHeight());
     //   $('.navbar').addClass("minimize");
     //
     // } else if (scroll < anchor && sel != "#scr-home") {
@@ -70,16 +70,8 @@ $(document).ready(function(){
 
 
 
-  //contactform collapse
-  $('.collapsible').collapsible();
 
-  // sendMessage.on('click', function(){
-  //   sendMessage.toggleClass('expand');
-  // })
-  //
-  // sendMessageExpand.on('click', function(){
-  //   this.removeClass('expand');
-  // })
+
 
 
 });
