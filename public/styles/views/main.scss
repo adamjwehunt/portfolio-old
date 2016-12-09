@@ -18,7 +18,6 @@ body {
   padding: 5px;
   margin: 7px;
   font-size: 1.1em;
-  text-transform: uppercase;
 }
 
 .navbar.minimize  h1{
@@ -52,6 +51,7 @@ body {
   text-transform: uppercase;
   font-size: 1em;
   letter-spacing: 0.3em;
+
 }
 
 #home a {
@@ -60,16 +60,12 @@ body {
   display: inline-block;
   padding: 10px;
   cursor: pointer;
-
+  font-weight: 300;
 }
 
 #about {
   background: #fff;
   margin-top: calc(100vh - 61px);
-}
-
-.screenshot {
-  display: none;
 }
 
 .portrait {
@@ -79,6 +75,11 @@ body {
   margin-top: -110px;
   position: absolute;
   left: 10%;
+  border-radius: 50%;
+}
+
+.aboutme  a {
+  color: #039be5;
 }
 
 .content {
@@ -281,7 +282,6 @@ i.right {
 
 .social-media h2 {
   margin-top: 10px;
-  margin-bottom: 10px;
 }
 
 .social-media i {
@@ -389,6 +389,7 @@ textarea {
 
   #home h1 {
     font-size: 1.3em;
+    font-weight: 700;
   }
 
   #home a {
@@ -469,7 +470,7 @@ textarea {
   }
 
   #contact h1 {
-    font-size: 1.8em;
+    font-size: 2em;
   }
 
   .contactinfo h2 {
@@ -479,7 +480,7 @@ textarea {
   }
 
   .social-media i {
-    font-size: 3.5em;
+    font-size: 2.8em;
   }
 
   .email h3 {
