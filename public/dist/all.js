@@ -1,8 +1,26 @@
 "use strict";
 
-// angular.module('adamPortfolio',[])
+$(document).ready(function () {
 
-$(document).ready(function () {});
+  var navBar = $('.navbar'),
+      percent = 0;
+
+  $(document).scroll(function (e) {
+    var scroll = $(this).scrollTop();
+
+    percent = scroll / $(document).innerHeight();
+
+    navBar.css("background", "hsl(" + percent * 3.9 + ", " + percent * 84 + "%, " + (20 + percent * 23.5) + "%)");
+  });
+
+  $(function () {
+    $(".hithere").typed({
+      strings: ["Hi there"],
+      typeSpeed: 100,
+      startDelay: 10
+    });
+  });
+});
 
 function scrollTo(element) {
   var position = 0;

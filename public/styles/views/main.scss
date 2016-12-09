@@ -51,7 +51,7 @@ body {
   text-transform: uppercase;
   font-size: 1em;
   letter-spacing: 0.3em;
-
+  margin: .4em .1em;
 }
 
 #home a {
@@ -92,8 +92,8 @@ body {
 .content h2 {
   text-align: center;
   text-transform: uppercase;
-  padding: 20px 0 8px;
-  font-size: 1.3em;
+  padding: 20px 0 10px;
+  font-size: 1.4em;
 }
 
 .content p {
@@ -107,10 +107,32 @@ body {
   font-size: 1em;
 }
 
-.content h3 {
+.content span {
   font-size: 2em;
   padding-bottom: 10px;
 
+}
+
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
 }
 
 .content ul {
