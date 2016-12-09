@@ -15,7 +15,7 @@
     <meta property="fb:app_id" content="1178143738942770" />
     <meta name="twitter:image:alt" content="Adam's Portfolio and Contact Info">
     <title>Adam Wehunt | Web Developer </title>
-    <link rel="icon" href="favicon.ico" />
+    <link href="img/favicon.ico" rel="shortcut icon">
     <link rel="shortcut icon" href="favicon.ico" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -25,25 +25,25 @@
   </head>
   <body>
 
-    <header class='navbar'>
+    <header class='navbar z-depth-3'>
       <h1 onclick='scrollTo(0)'>Adam Wehunt</h1>
     </header>
     <div class='main-wrapper'>
       <section id='home'>
         <div class='title'>
           <h1>Full Stack Developer</h1>
-          <h1> · UX Enthusiast · </h1>
-          <h1>Internet Zealot</h1>
+          <h1>·  UX Enthusiast  ·</h1>
+          <h1> Internet Zealot</h1>
           <br>
           <a onclick="scrollTo('#contact')">Contact</a>
           <a onclick="scrollTo('#projects')">Portfolio</a>
         </div>
       </section>
       <section class='panel' id='about'>
-        <img class='portrait' src='./img/portrait6.jpg'>
+        <img class='portrait' src='./img/portrait.jpg'>
         <div class='content'>
           <div class='aboutme'>
-            <h3>Hi there</h3>
+            <span class='hithere'>Hi there</span>
             <p>My name is Adam Wehunt and I'm a web developer from the beautiful state of Arizona.</p>
             <p>I am a self-taught programmer who recently graduated from DevMountain Coding Bootcamp with a <a href='https://www.youracclaim.com/badges/a1420505-e690-4f3a-8187-5d26c562ae06/public_url' target='_blank'>certification</a> in Javascript.</p>
             <p>I have passion for design and developing all kinds of software and web applications.</p>
@@ -151,7 +151,7 @@
         </div>
         <div class='projects-wrapper'>
           <div class='project-etq project'>
-            <div class="card">
+            <div class="card z-depth-3">
               <div class="card-image waves-effect waves-block">
                 <img class="activator" src="./img/etq/main.jpg">
               </div>
@@ -182,7 +182,7 @@
             </div>
           </div>
           <div class='project-shyft project'>
-            <div class="card">
+            <div class="card z-depth-3">
               <div class="card-image waves-effect waves-block">
                 <img class="activator" src="./img/shyft/main.jpg">
               </div>
@@ -260,6 +260,7 @@
       </footer>
     </div>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.4/typed.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
     <script type='text/javascript' src='./dist/all.js'></script>
   </body>
