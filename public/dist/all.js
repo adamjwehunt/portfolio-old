@@ -21,7 +21,7 @@ $(document).ready(function () {
           startDelay: 250
         });
       });
-    } }, { selector: '.content ul', offset: 200, callback: function callback(el) {
+    } }, { selector: '.content ul', offset: 150, callback: function callback(el) {
       Materialize.showStaggeredList($(el));
     } }];
   Materialize.scrollFire(options);

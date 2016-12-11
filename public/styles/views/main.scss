@@ -163,10 +163,6 @@ body {
   padding: 10px 5px;
 }
 
-.tech div {
-  padding: 0 0 20px;
-}
-
 .icon {
   height: 30px;
 }
@@ -391,6 +387,7 @@ textarea {
   text-align: center;
   padding: 20px 0;
   font-weight: 300;
+  background: #354d5a;
 }
 
 .totop {
@@ -464,6 +461,10 @@ textarea {
   .tech p {
     font-size: 1.2em;
     font-weight: 300;
+  }
+
+  .tech div {
+    padding: 0 0 20px;
   }
 
   .content hr {
