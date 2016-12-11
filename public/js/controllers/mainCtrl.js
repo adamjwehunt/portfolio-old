@@ -23,7 +23,7 @@ var navBar = $('.navbar'),
         });
       });
     } },
-    {selector: '.content ul', offset: 150, callback: function(el) {
+    {selector: '.content ul', offset: 175, callback: function(el) {
       Materialize.showStaggeredList($(el));
     } }
   ];
