@@ -13,13 +13,18 @@ $(document).ready(function () {
     navBar.css("background", "hsl(" + percent * 3.9 + ", " + percent * 84 + "%, " + (20 + percent * 23.5) + "%)");
   });
 
-  $(function () {
-    $(".hithere").typed({
-      strings: ["Hi there"],
-      typeSpeed: 100,
-      startDelay: 10
-    });
-  });
+  var options = [{ selector: '.hithere', offset: 50, callback: function callback() {
+      $(function () {
+        $(".hithere").typed({
+          strings: ["Hi there"],
+          typeSpeed: 100,
+          startDelay: 250
+        });
+      });
+    } }, { selector: '.content ul', offset: 200, callback: function callback(el) {
+      Materialize.showStaggeredList($(el));
+    } }];
+  Materialize.scrollFire(options);
 });
 
 function scrollTo(element) {
