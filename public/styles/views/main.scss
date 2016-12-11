@@ -16,7 +16,7 @@ body {
 
 .navbar h1 {
   padding: 5px;
-  margin: 7px;
+  margin: 5px;
   font-size: 1.1em;
 }
 
@@ -41,7 +41,7 @@ body {
 }
 
 #home .title {
-  margin-top: calc(6em + 20vw);
+  margin-top: calc(6em + 18vw);
   width: 100%;
   text-align: center;
 }
@@ -65,27 +65,23 @@ body {
 
 #about {
   background: #fff;
-  margin-top: calc(100vh - 61px);
+  margin-top: calc(100vh - 50px);
 }
 
 .portrait {
-  height: 150px;
+  height: 135px;
   background: #bbb;
   border: 5px solid #dedbd8;
-  margin-top: -110px;
+  margin-top: -100px;
   position: absolute;
   left: 10%;
   border-radius: 50%;
 }
 
-.aboutme  a {
-  color: #039be5;
-}
-
 .content {
   color: #444;
   margin: 0 auto;
-  padding: 5% 10%;
+  padding: 10% 10%;
   text-align: right;
 }
 
@@ -96,51 +92,52 @@ body {
   font-size: 1.4em;
 }
 
-.content p {
-  padding: 9px 0px;
-  line-height: 1.2;
-  font-weight: 300;
-  font-size: 1.4em;
+.aboutme ul {
+  padding-top: 10px;
 }
 
-.tech p {
-  font-size: 1em;
+.aboutme li {
+  line-height: 1.2;
+  font-weight: 300;
+  font-size: 1.3em;
+  color: #444;
+  margin: 0 auto;
+  text-align: right;
+  opacity: 0;
+}
+
+.aboutme a {
+  color: #039be5;
 }
 
 .content span {
   font-size: 2em;
-  padding-bottom: 10px;
-
 }
 
 .typed-cursor{
-    opacity: 1;
-    -webkit-animation: blink 0.7s infinite;
-    -moz-animation: blink 0.7s infinite;
-    animation: blink 0.7s infinite;
+  opacity: 1;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
 }
 @keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
 }
 @-webkit-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
 }
 @-moz-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-
-.content ul {
-  text-align: center;
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
 }
 
 .content li {
-  padding: 5px 5px;
+  padding: 10px 7px;
   display: inline-block;
 }
 
@@ -152,6 +149,22 @@ body {
 
 .content hr {
   margin-top: 5vh;
+}
+
+.tech {
+  text-align: center;
+}
+
+.tech p {
+  font-size: 1em;
+}
+
+.tech li {
+  padding: 10px 5px;
+}
+
+.tech div {
+  padding: 0 0 20px;
 }
 
 .icon {
@@ -349,7 +362,7 @@ i.right {
 }
 
 textarea {
-  height: 10vh;
+  height: 24vh;
 }
 
 .messagebutton {
@@ -400,8 +413,9 @@ textarea {
 
 
 
-
+/////////////////////////////////////////////////
 /////////////// @media querys  //////////////////
+/////////////////////////////////////////////////
 
 @media (min-width : 900px) {
 
@@ -429,9 +443,18 @@ textarea {
     padding: 50px 10% 50px;
   }
 
+  .content span {
+    font-size: 2.5em;
+  }
+
   .aboutme {
     width: 45%;
     padding-top: 60px;
+  }
+
+  .aboutme li {
+    font-size: 1.4em;
+
   }
 
   .tech {
@@ -440,6 +463,7 @@ textarea {
 
   .tech p {
     font-size: 1.2em;
+    font-weight: 300;
   }
 
   .content hr {
@@ -452,10 +476,6 @@ textarea {
 
   .aboutme h3 {
     font-size: 2em;
-  }
-
-  .aboutme p {
-    font-size: 1.4em;
   }
 
   .tech h2 {
@@ -512,5 +532,18 @@ textarea {
   .sendmessage {
     padding: 0 25%;
   }
+}
 
+//Phone landscape
+@media screen and (min-width:320px) and (max-width:767px) and (orientation:landscape) {
+  #about {
+    margin-top: calc(100vh - 40px);
+  }
+  #home .title {
+    margin-top: 6em;
+  }
+  .portrait {
+    height: 135px;
+    margin-top: -100px;
+  }
 }
