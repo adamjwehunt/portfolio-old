@@ -39,8 +39,8 @@
           <a onclick="scrollTo('#projects')">Portfolio</a>
         </div>
       </section>
-      <section class='panel' id='about'>
-        <img class='portrait' src='./img/portrait.jpg'>
+      <section class='panel z-depth-2' id='about'>
+        <img class='portrait z-depth-2' src='./img/portrait.jpg'>
         <div class='content'>
           <div class='aboutme'>
             <span class='hithere'></span>
@@ -147,7 +147,7 @@
           </div>
         </div>
       </section>
-      <section class='panel' id='projects'>
+      <section class='panel z-depth-2' id='projects'>
         <div class='title'>
           <h1>Projects</h1>
         </div>
@@ -215,7 +215,7 @@
           </div>
         </div>
       </section>
-      <footer class='panel' id='contact'>
+      <footer class='panel z-depth-2' id='contact'>
         <div class="contact-content">
           <div class='title'>
             <h1>Let's get in touch</h1>
@@ -237,8 +237,8 @@
           <div class="sendmessage">
             <ul class="collapsible">
               <li>
-                <div class="collapsible-header" onclick="scrollTo('#copyright')">Send me a Message</div>
-                <div class="collapsible-body">
+                <div class="collapsible-header" onclick="scrollToDelayed('#copyright')">Send me a Message</div>
+                <div class="collapsible-body animated flipInX">
                   <form method="POST" action="http://formspree.io/adamjwehunt@gmail.com">
                     <input type="email" name="email" placeholder="Your email">
                     <input type="hidden" name="_next" value="#" />

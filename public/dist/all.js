@@ -13,16 +13,18 @@ $(document).ready(function () {
     navBar.css("background", "hsl(" + percent * 3.9 + ", " + percent * 84 + "%, " + (20 + percent * 23.5) + "%)");
   });
 
-  var options = [{ selector: '.hithere', offset: 50, callback: function callback() {
+  var options = [{ selector: '.hithere', offset: 70, callback: function callback() {
       $(function () {
         $(".hithere").typed({
           strings: ["Hi there"],
           typeSpeed: 100,
-          startDelay: 250
+          startDelay: 400
         });
       });
     } }, { selector: '.content ul', offset: 175, callback: function callback(el) {
       Materialize.showStaggeredList($(el));
+    } }, { selector: '#copyright', offset: 0, callback: function callback(el) {
+      $('.sendmessage').addClass('animated pulse');
     } }];
   Materialize.scrollFire(options);
 });
@@ -33,6 +35,17 @@ function scrollTo(element) {
     position = $(element).offset().top;
   }
   $("html, body").animate({ scrollTop: position }, "slow");
+}
+
+function scrollToDelayed(element) {
+  var position = 0;
+  if (element != 0) {
+    position = $(element).offset().top;
+  }
+
+  setTimeout(function () {
+    $("html, body").animate({ scrollTop: position }, "slow");
+  }, 200);
 }
 
 (function (i, s, o, g, r, a, m) {
