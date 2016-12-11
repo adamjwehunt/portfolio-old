@@ -14,17 +14,20 @@ var navBar = $('.navbar'),
 
 
   var options = [
-    {selector: '.hithere', offset: 50, callback: function() {
+    {selector: '.hithere', offset: 70, callback: function() {
       $(function(){
         $(".hithere").typed({
           strings: ["Hi there"],
           typeSpeed: 100,
-          startDelay: 250
+          startDelay: 400
         });
       });
     } },
     {selector: '.content ul', offset: 175, callback: function(el) {
       Materialize.showStaggeredList($(el));
+    } },
+    {selector: '#copyright', offset: 0, callback: function(el) {
+      $('.sendmessage').addClass('animated pulse');
     } }
   ];
   Materialize.scrollFire(options);
@@ -37,6 +40,17 @@ function scrollTo(element) {
     position = $(element).offset().top;
   }
   $("html, body").animate({ scrollTop: position }, "slow");
+}
+
+function scrollToDelayed(element) {
+  var position = 0;
+  if (element != 0) {
+    position = $(element).offset().top;
+  }
+
+  setTimeout(function () {
+    $("html, body").animate({ scrollTop: position }, "slow");
+  }, 200);
 }
 
 
