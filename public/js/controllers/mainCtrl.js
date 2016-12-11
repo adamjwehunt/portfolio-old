@@ -26,8 +26,10 @@ var navBar = $('.navbar'),
     {selector: '.content ul', offset: 175, callback: function(el) {
       Materialize.showStaggeredList($(el));
     } },
-    {selector: '#copyright', offset: 0, callback: function(el) {
-      $('.sendmessage').addClass('animated pulse');
+    {selector: '#copyright', offset: -20, callback: function(el) {
+      setTimeout(function () {
+        $('.sendmessage').addClass('animated pulse');
+      }, 500);
     } }
   ];
   Materialize.scrollFire(options);
@@ -50,7 +52,7 @@ function scrollToDelayed(element) {
 
   setTimeout(function () {
     $("html, body").animate({ scrollTop: position }, "slow");
-  }, 200);
+  }, 250);
 }
 
 

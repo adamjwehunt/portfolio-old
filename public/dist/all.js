@@ -23,8 +23,10 @@ $(document).ready(function () {
       });
     } }, { selector: '.content ul', offset: 175, callback: function callback(el) {
       Materialize.showStaggeredList($(el));
-    } }, { selector: '#copyright', offset: 0, callback: function callback(el) {
-      $('.sendmessage').addClass('animated pulse');
+    } }, { selector: '#copyright', offset: -20, callback: function callback(el) {
+      setTimeout(function () {
+        $('.sendmessage').addClass('animated pulse');
+      }, 500);
     } }];
   Materialize.scrollFire(options);
 });
@@ -45,7 +47,7 @@ function scrollToDelayed(element) {
 
   setTimeout(function () {
     $("html, body").animate({ scrollTop: position }, "slow");
-  }, 200);
+  }, 250);
 }
 
 (function (i, s, o, g, r, a, m) {
