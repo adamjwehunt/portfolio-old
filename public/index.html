@@ -27,6 +27,17 @@
 
     <header class='navbar z-depth-3'>
       <h1 onclick='scrollTo(0)'>Adam Wehunt</h1>
+      <div class="navigation">
+        <div class="nav-about" onclick="scrollTo('#portrait')">
+          <h1>about</h1>
+        </div>
+        <div class="nav-projects" onclick="scrollTo('#projects')">
+          <h1>projects</h1>
+        </div>
+        <div class="nav-contact" onclick="scrollTo('#contact')">
+          <h1>contact</h1>
+        </div>
+      </div>
     </header>
     <div class='main-wrapper'>
       <section id='home'>
@@ -40,7 +51,7 @@
         </div>
       </section>
       <section class='panel z-depth-2' id='about'>
-        <img class='portrait z-depth-2' src='./img/portrait.jpg'>
+        <img class='portrait z-depth-2' id='portrait' src='./img/portrait.jpg'>
         <div class='content'>
           <div class='aboutme'>
             <span class='hithere'></span>
@@ -152,63 +163,124 @@
           <h1>Projects</h1>
         </div>
         <div class='projects-wrapper'>
-          <div class='project-etq project'>
-            <div class="card z-depth-3">
-              <div class="card-image waves-effect waves-block">
-                <img class="activator" src="./img/etq/main.jpg">
-              </div>
-              <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">etqClone | ecommerce<i class="material-icons right">more_vert</i></span>
-                <div class='project-links'>
-                  <p><a target="_blank" href="https://github.com/ajwehunt/etqClone">code<i class="fa fa-code" aria-hidden="true"></i></a></p>
-                  <p><a target="_blank" href="http://www.etqclone.site"><i class="fa fa-globe" aria-hidden="true"></i> live</a></p>
+          <div class="projects-row">
+            <div class='project-etq project'>
+              <div class="card z-depth-3">
+                <div class="card-image waves-effect waves-block">
+                  <img class="activator" src="./img/etq/main.jpg">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">etqClone | ecommerce<i class="material-icons right">more_vert</i></span>
+                  <div class='project-links'>
+                    <p><a target="_blank" href="https://github.com/ajwehunt/etqClone">code<i class="fa fa-code" aria-hidden="true"></i></a></p>
+                    <p><a target="_blank" href="http://www.etqclone.site"><i class="fa fa-globe" aria-hidden="true"></i> live</a></p>
+                  </div>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">etqClone<i class="material-icons right">close</i></span>
+                  <div class='content-tech'>
+                    <div>AngularJs</div><div>NodeJs</div><div>Express</div><div>SQL</div>
+                  </div>
+                  <div class="content-descrip">
+                    <p>• Cloned http://etq-amsterdam.com, emphasizing mobile design and backend product management</p>
+                    <p>• Focused on clean animations using jQuery to give users a smooth, fluid experience</p>
+                    <p>• Challenge: Utilizing the backend to manage the shopping cart and checkout</p>
+                  </div>
+                  <div class="content-photos">
+                    <img src="./img/etq/mobile1.jpg">
+                    <img src="./img/etq/mobile2.jpg">
+                    <img src="./img/etq/mobile3.jpg">
+                    <img src="./img/etq/main2.jpg">
+                  </div>
                 </div>
               </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">etqClone<i class="material-icons right">close</i></span>
-                <div class='content-tech'>
-                  <div>AngularJs</div><div>NodeJs</div><div>Express</div><div>SQL</div>
+            </div>
+            <div class='project-shyft project'>
+              <div class="card z-depth-3">
+                <div class="card-image waves-effect waves-block">
+                  <img class="activator" src="./img/shyft/main.jpg">
                 </div>
-                <div class="content-descrip">
-                  <p>• Cloned http://etq-amsterdam.com, emphasizing mobile design and backend product management</p>
-                  <p>• Focused on clean animations using jQuery to give users a smooth, fluid experience</p>
-                  <p>• Challenge: Utilizing the backend to manage the shopping cart and checkout</p>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">Shyft | lyft.com clone<i class="material-icons right">more_vert</i></span>
+                  <div class='project-links'>
+                    <p class='codelink'><a target="_blank" href="https://github.com/ajwehunt/shyft">code<i class="fa fa-code" aria-hidden="true"></i></a></p>
+                    <p><a target="_blank" href="http://www.shyft.site"><i class="fa fa-globe" aria-hidden="true"></i> live</a></p>
+                  </div>
                 </div>
-                <div class="content-photos">
-                  <img src="./img/etq/mobile1.jpg">
-                  <img src="./img/etq/mobile2.jpg">
-                  <img src="./img/etq/mobile3.jpg">
-                  <img src="./img/etq/main2.jpg">
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">Shyft<i class="material-icons right">close</i></span>
+                  <div class='content-tech'>
+                    <div>ReactJs</div><div>NodeJs</div><div>Express</div><div>SQL</div>
+                  </div>
+                  <p>• Four-person project cloning lyft.com, integrating Lyft's mobile app into a browser</p>
+                  <p>• Made the website pixel-perfect and mobile responsive with Bootstrap</p>
+                  <p>• Challenge: Learning ReactJs to complete the project MVP in 3 weeks</p>
+                  <div class="content-photos">
+                    <img src="./img/shyft/scrnsht1.jpg">
+                  </div>
+                  <div class="content-photos">
+                    <img src="./img/shyft/mobile.jpg">
+                    <img src="./img/shyft/mobile1.jpg">
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class='project-shyft project'>
-            <div class="card z-depth-3">
-              <div class="card-image waves-effect waves-block">
-                <img class="activator" src="./img/shyft/main.jpg">
-              </div>
-              <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">Shyft | lyft.com clone<i class="material-icons right">more_vert</i></span>
-                <div class='project-links'>
-                  <p class='codelink'><a target="_blank" href="https://github.com/ajwehunt/shyft">code<i class="fa fa-code" aria-hidden="true"></i></a></p>
-                  <p><a target="_blank" href="http://www.shyft.site"><i class="fa fa-globe" aria-hidden="true"></i> live</a></p>
+          <div class="projects-row">
+            <div class='project-zen project'>
+              <div class="card z-depth-3">
+                <div class="card-image waves-effect waves-block">
+                  <img class="activator" src="./img/zen/main.jpg">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">ZenWaterArt | Paint App<i class="material-icons right">more_vert</i></span>
+                  <div class='project-links'>
+                    <p><a target="_blank" href="https://github.com/ajwehunt/zenwaterart">code<i class="fa fa-code" aria-hidden="true"></i></a></p>
+                    <p><a target="_blank" href="http://www.zenwaterart.site"><i class="fa fa-globe" aria-hidden="true"></i> live</a></p>
+                  </div>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">Zen Water Art<i class="material-icons right">close</i></span>
+                  <div class='content-tech'>
+                    <div>AngularJs</div><div>CSS3</div><div>Html5 Canvas</div><div>Node</div>
+                  </div>
+                  <div class="content-descrip">
+                    <p>• Used Canvas to simulate the popular art product, BuddhaBoard</p>
+                    <p>• Main focus was coding each brush signature with a fade effect</p>
+                    <p>• Challenge: Manipulating and understanding Canvas</p>
+                  </div>
+                  <div class="content-photos">
+                    <img src="./img/zen/mobile.jpg">
+                    <img src="./img/zen/mobile1.jpg">
+                    <img src="./img/zen/scrnsht1.jpg">
+                    <img src="./img/zen/scrnsht2.jpg">
+                  </div>
                 </div>
               </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">Shyft<i class="material-icons right">close</i></span>
-                <div class='content-tech'>
-                  <div>ReactJs</div><div>NodeJs</div><div>Express</div><div>SQL</div>
+            </div>
+            <div class='project-shyft project'>
+              <div class="card z-depth-3">
+                <div class="card-image waves-effect waves-block">
+                  <img class="activator" src="./img/toys/main.jpg">
                 </div>
-                <p>• Four-person project cloning lyft.com, integrating Lyft's mobile app into a browser</p>
-                <p>• Made the website pixel-perfect and mobile responsive with Bootstrap</p>
-                <p>• Challenge: Learning ReactJs to complete the project MVP in 3 weeks</p>
-                <div class="content-photos">
-                  <img src="./img/shyft/scrnsht1.jpg">
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">Javascript Toy Problems<i class="material-icons right">more_vert</i></span>
+                  <div class='project-links'>
+                    <p class='codelink'><a target="_blank" href="https://github.com/ajwehunt/toyProblems">code<i class="fa fa-code" aria-hidden="true"></i></a></p>
+                    <p><a target="_blank" href="https://www.codewars.com/users/ajwehunt"><i class="fa fa-globe" aria-hidden="true"></i> codewars</a></p>
+                  </div>
                 </div>
-                <div class="content-photos">
-                  <img src="./img/shyft/mobile.jpg">
-                  <img src="./img/shyft/mobile1.jpg">
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">Javascript EveryDay<i class="material-icons right">close</i></span>
+                  <div class='content-tech'>
+                    <div>Javascript Toy Problems</div>
+                  </div>
+                  <p>• Everyday I will post a new Javascript Toy Problem on Github.</p>
+                  <p>• December 2016, I have been White-Boarding beginner to moderate level problems from codewars.com</p>
+                  <p>• More advanced problems to come January 2017. </p>
+                  <div class="content-photos">
+                    <img src="./img/toys/scrnsht.jpg">
+                  </div>
                 </div>
               </div>
             </div>
