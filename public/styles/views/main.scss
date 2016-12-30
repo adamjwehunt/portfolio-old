@@ -30,6 +30,7 @@ body {
   flex-direction: row;
   margin-right: 4px;
   font-size: .85rem;
+  text-shadow: 0px 3px 4px rgba(0,0,0,.5);
 }
 
 .navbar.minimize  h1{
@@ -58,6 +59,10 @@ body {
   margin-top: calc(6em + 18vw);
   width: 100%;
   text-align: center;
+}
+
+.title a {
+  text-shadow: 0px 3px 4px rgba(0,0,0,.5);
 }
 
 #home h1 {
@@ -255,6 +260,8 @@ body {
 .project-links {
   justify-content: space-between;
   display: flex;
+  text-shadow: 0px 0.5px 0px rgba(0, 0, 0, .1);
+  padding-top: 10px;
 }
 
 i.right {
@@ -342,6 +349,10 @@ i.right {
   padding: 0 10px;
 }
 
+.social-media a {
+  text-shadow: 0px 3px 4px rgba(0,0,0,.5);
+}
+
 .sendmessage {
   padding: 0 10%;
   margin: 25px 0 30px 0;
@@ -402,6 +413,7 @@ textarea {
   text-align: center;
   font-size: 1.1em;
   margin-bottom: 40px;
+  text-shadow: 0px 3px 4px rgba(0,0,0,.5);
 }
 
 #copyright h2 {
@@ -422,6 +434,7 @@ textarea {
   margin: 5px 2%;
   color: #dedbd8;
   cursor: pointer;
+  text-shadow: 0px 3px 4px rgba(0,0,0,.5);
 }
 
 /////////////// Animations ///////////////////
