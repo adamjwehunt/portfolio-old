@@ -857,6 +857,8 @@ textarea {
     padding: 10px 1.5%; }
   .card .card-title {
     font-size: 30px; }
+  .currentproject {
+    justify-content: center; }
   .contactinfo {
     display: flex; }
   #contact hr {
