@@ -1,3 +1,17 @@
+// sass
+$a-tags: 'a, a:active, .navigation div, .collapsible, a:hover, a:visited, .totop';
+$a-tags-hover: 'a:active, a:hover, .navigation div:active, .navigation div:hover, .collapsible:hover, .collapsible:active, .totop:hover, .totop:active';
+
+#{$a-tags} {
+  color: #dedbd8;
+  text-decoration: none;
+  transition: .5s;
+}
+
+#{$a-tags-hover} {
+  color: #fff;
+}
+
 
 body {
   background: #333;
@@ -20,7 +34,6 @@ body {
   font-size: 1.1em;
   display: inline-block;
   cursor: pointer;
-  transition: .5s;
 }
 
 .navigation {
@@ -286,10 +299,6 @@ i.right {
   padding-bottom: 30px;
 }
 
-#contact a {
-  color: #dedbd8;
-}
-
 #contact h1 {
   padding-top: 60px;
   text-align: center;
@@ -432,7 +441,6 @@ textarea {
   top: 0;
   font-size: 3em;
   margin: 5px 2%;
-  color: #dedbd8;
   cursor: pointer;
   text-shadow: 0px 3px 4px rgba(0,0,0,.5);
 }
