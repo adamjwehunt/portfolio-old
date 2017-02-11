@@ -198,25 +198,24 @@
       </section>
       <!-- PROJECTS -->
       <section class='panel z-depth-2' id='projects'>
+        <!-- TITLE -->
         <div>
           <h1>Projects
           </h1>
         </div>
-        <div class='projectType'>
-          <h3>Current:
-          </h3>
-        </div>
-        <div class='projects-wrapper'>
-          <div class="projects-row">
+
+        <!-- CAROUSEL -->
+        <div class="c-wrap">
+          <div class="carousel carouselEdit center" data-indicators="true">
             <!-- StarJarGirl -->
-            <div class='project'>
+            <div class='carousel-item project'>
               <div class="card z-depth-3">
                 <div class="card-image waves-effect waves-block">
                   <img class="activator" src="./img/star/main.jpg">
                 </div>
                 <div class="card-content">
                   <span class="card-title activator grey-text text-darken-4">StarJarGirl | Ecommerce
-                    <i class="material-icons right">more_vert
+                    <i class="material-icons right" id='cardBtn'>more_vert
                     </i>
                   </span>
                   <div class='project-links'>
@@ -261,7 +260,7 @@
               </div>
             </div>
             <!-- Mini Projects -->
-            <div class='project'>
+            <div class='carousel-item project'>
               <div class="card z-depth-3">
                 <div class="card-image waves-effect waves-block">
                   <img class="activator" src="./img/minis/main.jpg">
@@ -305,11 +304,11 @@
                     <div>C#
                     </div>
                   </div>
-                  <p>Here are some recent smaller projects I have completed, jumping into new tech as well as coding challenges.
+                  <p>Here are some recent smaller projects, jumping into new tech as well as coding challenges.
                   </p>
                   <br>
                   <ul>Toy Problems
-                    <li>• (Almost) every day I will post a new Toy Problem from Codewars.com
+                    <li>• Coding exercises from Codewars.com
                     </li>
                     <li>
                     </li>•
@@ -318,10 +317,10 @@
                     <a target="_blank" href="https://www.codewars.com/users/ajwehunt">Codewars Profile</a>
                   </ul>
                   <br>
-                  <ul>Tanga Coding Challenge | Feb 2017
-                    <li>• Recent project assigned by Tanga as an interview challenge.
+                  <ul>Pizza Coding Challenge | Feb 2017
+                    <li>• Recent project assigned as an interview challenge.
                     </li>
-                    <li>• Used Tanga's Server to build a pizza making app.
+                    <li>• Used the company's server to build a pizza making app.
                     </li>
                     <li>
                     </li>•
@@ -335,16 +334,8 @@
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-        <div class='projectType'>
-          <h3>Past:
-          </h3>
-        </div>
-        <div class='projects-wrapper'>
-          <div class="projects-row">
             <!-- Etq -->
-            <div class='project'>
+            <div class='carousel-item project'>
               <div class="card z-depth-3">
                 <div class="card-image waves-effect waves-block">
                   <img class="activator" src="./img/etq/main.jpg">
@@ -402,7 +393,7 @@
               </div>
             </div>
             <!-- Shyft -->
-            <div class='project'>
+            <div class='carousel-item project'>
               <div class="card z-depth-3">
                 <div class="card-image waves-effect waves-block">
                   <img class="activator" src="./img/shyft/main.jpg">
@@ -418,152 +409,103 @@
                       </i>
                     </a>
                   </p>
-                    <p>
-                      <a target="_blank" href="http://www.shyft.site">
-                        <i class="fa fa-globe" aria-hidden="true">
-                        </i> live
-                      </a>
-                    </p>
+                  <p>
+                    <a target="_blank" href="http://www.shyft.site">
+                      <i class="fa fa-globe" aria-hidden="true">
+                      </i> live
+                    </a>
+                  </p>
+                </div>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Shyft
+                  <i class="material-icons right">close
+                  </i>
+                </span>
+                <div class='content-tech'>
+                  <div>ReactJs
+                  </div>
+                  <div>NodeJs
+                  </div>
+                  <div>Express
+                  </div>
+                  <div>SQL
                   </div>
                 </div>
-                <div class="card-reveal">
-                  <span class="card-title grey-text text-darken-4">Shyft
-                    <i class="material-icons right">close
-                    </i>
-                  </span>
-                  <div class='content-tech'>
-                    <div>ReactJs
-                    </div>
-                    <div>NodeJs
-                    </div>
-                    <div>Express
-                    </div>
-                    <div>SQL
-                    </div>
-                  </div>
-                  <p>• Four-person project cloning lyft.com, integrating Lyft's mobile app into a browser
-                  </p>
-                  <p>• Made the website pixel-perfect and mobile responsive with Bootstrap
-                  </p>
-                  <p>• Challenge: Learning ReactJs to complete the project MVP in 3 weeks
-                  </p>
-                  <div class="content-photos">
-                    <img src="./img/shyft/scrnsht1.jpg">
-                  </div>
-                  <div class="content-photos">
-                    <img src="./img/shyft/mobile.jpg">
-                    <img src="./img/shyft/mobile1.jpg">
-                  </div>
+                <p>• Four-person project cloning lyft.com, integrating Lyft's mobile app into a browser
+                </p>
+                <p>• Made the website pixel-perfect and mobile responsive with Bootstrap
+                </p>
+                <p>• Challenge: Learning ReactJs to complete the project MVP in 3 weeks
+                </p>
+                <div class="content-photos">
+                  <img src="./img/shyft/scrnsht1.jpg">
+                </div>
+                <div class="content-photos">
+                  <img src="./img/shyft/mobile.jpg">
+                  <img src="./img/shyft/mobile1.jpg">
                 </div>
               </div>
             </div>
           </div>
-          <div class="projects-row">
-            <!-- zen water art -->
-            <div class='project'>
-              <div class="card z-depth-3">
-                <div class="card-image waves-effect waves-block">
-                  <img class="activator" src="./img/zen/main.jpg">
+            <!-- Zen water art -->
+            <div class='carousel-item project'>
+            <div class="card z-depth-3">
+              <div class="card-image waves-effect waves-block">
+                <img class="activator" src="./img/zen/main.jpg">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">ZenWaterArt | Paint App
+                  <i class="material-icons right">more_vert
+                  </i>
+                </span>
+                <div class='project-links'>
+                  <p>
+                    <a target="_blank" href="https://github.com/ajwehunt/zenwaterart">code
+                      <i class="fa fa-code" aria-hidden="true">
+                      </i>
+                    </a>
+                  </p>
+                  <p>
+                    <a target="_blank" href="http://www.zenwaterart.site">
+                      <i class="fa fa-globe" aria-hidden="true">
+                      </i> live
+                    </a>
+                  </p>
                 </div>
-                <div class="card-content">
-                  <span class="card-title activator grey-text text-darken-4">ZenWaterArt | Paint App
-                    <i class="material-icons right">more_vert
-                    </i>
-                  </span>
-                  <div class='project-links'>
-                    <p>
-                      <a target="_blank" href="https://github.com/ajwehunt/zenwaterart">code
-                        <i class="fa fa-code" aria-hidden="true">
-                        </i>
-                      </a>
-                    </p>
-                    <p>
-                      <a target="_blank" href="http://www.zenwaterart.site">
-                        <i class="fa fa-globe" aria-hidden="true">
-                        </i> live
-                      </a>
-                    </p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Zen Water Art
+                  <i class="material-icons right">close
+                  </i>
+                </span>
+                <div class='content-tech'>
+                  <div>AngularJs
+                  </div>
+                  <div>CSS3
+                  </div>
+                  <div>Html5 Canvas
+                  </div>
+                  <div>Node
                   </div>
                 </div>
-                <div class="card-reveal">
-                  <span class="card-title grey-text text-darken-4">Zen Water Art
-                    <i class="material-icons right">close
-                    </i>
-                  </span>
-                  <div class='content-tech'>
-                    <div>AngularJs
-                    </div>
-                    <div>CSS3
-                    </div>
-                    <div>Html5 Canvas
-                    </div>
-                    <div>Node
-                    </div>
-                  </div>
-                  <div class="content-descrip">
-                    <p>• Used Canvas to simulate the popular art product, BuddhaBoard
-                    </p>
-                    <p>• Main focus was coding each brush signature with a fade effect
-                    </p>
-                    <p>• Challenge: Manipulating and understanding Canvas
-                    </p>
-                  </div>
-                  <div class="content-photos">
-                    <img src="./img/zen/mobile.jpg">
-                    <img src="./img/zen/mobile1.jpg">
-                    <img src="./img/zen/scrnsht1.jpg">
-                    <img src="./img/zen/scrnsht2.jpg">
-                  </div>
+                <div class="content-descrip">
+                  <p>• Used Canvas to simulate the popular art product, BuddhaBoard
+                  </p>
+                  <p>• Main focus was coding each brush signature with a fade effect
+                  </p>
+                  <p>• Challenge: Manipulating and understanding Canvas
+                  </p>
+                </div>
+                <div class="content-photos">
+                  <img src="./img/zen/mobile.jpg">
+                  <img src="./img/zen/mobile1.jpg">
+                  <img src="./img/zen/scrnsht1.jpg">
+                  <img src="./img/zen/scrnsht2.jpg">
                 </div>
               </div>
             </div>
-            <!-- hidden -->
-            <div class='project hidden'>
-              <div class="card z-depth-3">
-                <div class="card-image waves-effect waves-block">
-                  <img class="activator" src="./img/minis/main.jpg">
-                </div>
-                <div class="card-content">
-                  <span class="card-title activator grey-text text-darken-4">Javascript Toy Problems
-                    <i class="material-icons right">more_vert
-                    </i>
-                  </span>
-                  <div class='project-links'>
-                    <p class='codelink'>
-                      <a target="_blank" href="https://github.com/ajwehunt/toyProblems">code
-                        <i class="fa fa-code" aria-hidden="true">
-                        </i>
-                      </a>
-                    </p>
-                    <p>
-                      <a target="_blank" href="https://www.codewars.com/users/ajwehunt">
-                        <i class="fa fa-globe" aria-hidden="true">
-                        </i> codewars
-                      </a>
-                    </p>
-                  </div>
-                </div>
-                <div class="card-reveal">
-                  <span class="card-title grey-text text-darken-4">Javascript EveryDay
-                    <i class="material-icons right">close
-                    </i>
-                  </span>
-                  <div class='content-tech'>
-                    <div>Javascript Toy Problems
-                    </div>
-                  </div>
-                  <p>• Everyday I will post a new Javascript Toy Problem on Github.
-                  </p>
-                  <p>• December 2016, I have been White-Boarding beginner to moderate level problems from codewars.com
-                  </p>
-                  <p>• More advanced problems to come February 2017.
-                  </p>
-                  <div class="content-photos">
-                    <img src="./img/minis/scrnsht.jpg">
-                  </div>
-                </div>
-              </div>
-            </div>
+          </div>
           </div>
         </div>
       </section>

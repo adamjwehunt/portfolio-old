@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
-var navBar = $('.navbar'),
-    percent = 0;
+  var navBar = $('.navbar'),
+      percent = 0;
 
   $(document).scroll(function (e) {
     var scroll = $(this).scrollTop();
@@ -34,8 +34,26 @@ var navBar = $('.navbar'),
   ];
   Materialize.scrollFire(options);
 
-});
 
+  //carousel
+  $('.carousel').carousel();
+
+  // $('.carousel.carousel-slider').carousel({fullWidth: true});
+  //
+  // $(window).resize(function() {
+  //   setTimeout(function () {
+  //     $('.carousel.carousel-slider').carousel({fullWidth: true});
+  //   }, 250);
+  //   console.log('moved');
+  // })
+
+
+});
+// END JQUERY
+
+
+
+//ScrollTo NAV
 function scrollTo(element) {
   var position = 0;
   if (element != 0) {
@@ -56,6 +74,7 @@ function scrollToDelayed(element) {
 }
 
 
+// google analytics
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
