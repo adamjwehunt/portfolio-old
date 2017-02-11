@@ -29,8 +29,24 @@ $(document).ready(function () {
       }, 500);
     } }];
   Materialize.scrollFire(options);
-});
 
+  //carousel
+  $('.carousel').carousel();
+
+  // $('.carousel.carousel-slider').carousel({fullWidth: true});
+  //
+  // $(window).resize(function() {
+  //   setTimeout(function () {
+  //     $('.carousel.carousel-slider').carousel({fullWidth: true});
+  //   }, 250);
+  //   console.log('moved');
+  // })
+
+});
+// END JQUERY
+
+
+//ScrollTo NAV
 function scrollTo(element) {
   var position = 0;
   if (element != 0) {
@@ -50,6 +66,7 @@ function scrollToDelayed(element) {
   }, 250);
 }
 
+// google analytics
 (function (i, s, o, g, r, a, m) {
   i['GoogleAnalyticsObject'] = r;i[r] = i[r] || function () {
     (i[r].q = i[r].q || []).push(arguments);

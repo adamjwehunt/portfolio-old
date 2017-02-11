@@ -12,10 +12,20 @@ $a-tags-hover: 'a:active, a:hover, .navigation div:active, .navigation div:hover
   color: #fff;
 }
 
+body {
+  /* Better Font Rendering */
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  // -moz-osx-font-smoothing: grayscale;
+}
 
 body {
   background: #333;
   height: 100%;
+}
+
+.main-wrapper {
+  overflow: hidden;
 }
 
 .navbar {
@@ -31,7 +41,7 @@ body {
 .navbar h1 {
   padding: 7px 0px 5px 7px;
   margin: 2px 2px 5px 0px;
-  font-size: 1.3em;
+  font-size: 1.15em;
   display: inline-block;
   cursor: pointer;
 }
@@ -75,7 +85,7 @@ body {
 }
 
 .title a {
-  text-shadow: 0px 3px 4px rgba(0,0,0,.5);
+  text-shadow: 0px 3px 4px rgba(0,0,0,1);
 }
 
 #home h1 {
@@ -114,15 +124,16 @@ body {
 .content {
   color: #444;
   margin: 0 auto;
-  padding: 10% 10%;
-  text-align: right;
+
+      padding: 10% 10% 20%;
+        text-align: right;
 }
 
 .content h2 {
   text-align: center;
-  text-transform: uppercase;
-  padding: 20px 0 10px;
-  font-size: 1.4em;
+      text-transform: uppercase;
+      padding: 27px 0 7px;
+      font-size: 1.25em;
 }
 
 .aboutme ul {
@@ -132,8 +143,8 @@ body {
 .aboutme li {
   line-height: 1.2;
   font-weight: 300;
-  font-size: 1.3em;
-  color: #444;
+  font-size: 1.13em;
+  color: #000;
   margin: 0 auto;
   text-align: right;
   opacity: 0;
@@ -210,26 +221,53 @@ body {
   color: #ddd;
   padding: .3rem 1rem;
   border-radius: 2rem;
-  font-size: .9rem;
+  font-size: .75rem;
   margin: 0 2px 2px 0;
+}
+
+.carouselEdit {
+  overflow: visible;
+  height: 420px;
+  transform-style: flat;
+  -webkit-transform-style: flat;
+}
+
+.c-wrap {
+  width: 100%;
+  padding: 30px 0;
+  margin-top: -130px;
+}
+
+.carousel .carousel-item {
+  width: 295px;
+}
+
+.carousel .indicators .indicator-item {
+  height: 10px;
+  width: 10px;
+  margin: 24px 6px;
 }
 
 #projects {
   background: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 0;
 }
 
 #projects h1 {
   text-transform: uppercase;
   text-align: center;
   margin: 0px 0px 25px;
-  padding: 50px 0 10px;
+  padding: 25px 0 40px;
   color: #fff;
-  font-size: 1.5em;
+  font-size: 1.3em;
 }
 
 #projects a {
   color: #039be5;
-  font-size: 1.5em;
+  font-size: 1.4em;
 }
 
 .content-photos {
@@ -239,42 +277,17 @@ body {
 }
 
 .content-photos img {
-  height: 250px;
-  padding: 10px 10px 10px 0;
-  max-width: 100%;
-}
-
-.projects-wrapper {
-  padding: 5%;
-  padding-bottom: 10%;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  margin-top: -30px;
-}
-
-.projects-row {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-}
-
-.project {
-  padding: 10px 0;
-}
-
-.projectType {
-  text-align: center;
-  color: #fff;
-  margin-bottom: 10px;
-}
-
-.hidden {
-  display: none;
+  height: 170px;
+  padding: 10px 10px 0;
+  width: inherit!important;
 }
 
 .card {
   background: #dedbd8;
+}
+
+.card-reveal {
+  text-align: left;
 }
 
 .card-reveal p {
@@ -288,28 +301,39 @@ body {
 .card-reveal ul {
   line-height: 1.2;
 }
+
 .project-links {
   justify-content: space-between;
   display: flex;
   text-shadow: 0px 0.5px 0px rgba(0, 0, 0, .1);
-  padding-top: 10px;
+  padding-top: 5px;
 }
 
 i.right {
   font-size: 1.6em;
+  position: absolute;
+  top: 15px;
+  right: 15px;
 }
 
 .card .card-content {
-  padding: 15px 20px 20px;
+  padding: 5px 15px 15px;
   border-radius: 0 0 2px 2px;
+}
+
+.card-content span i {
+  font-size: 1.6em;
+  position: absolute;
+  top: initial;
+  right: 5px;
 }
 
 .card .card-title {
   margin-bottom: 10px;
   font-family: 'Lato', sans-serif;
-  font-size: 22px;
+  font-size: 20px;
+  width: 90%;
 }
-
 
 #contact {
   background: #a02929;
@@ -354,7 +378,7 @@ i.right {
 }
 
 .email h3 {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 1.2em;
   line-height: 1.2;
 }
@@ -386,7 +410,6 @@ i.right {
   font-family: 'Lato', sans-serif;
 }
 
-
 .collapsible {
   border-top: none;
   border-right: none;
@@ -408,7 +431,7 @@ i.right {
   margin: auto;
   width: 240px;
   border: 1px solid;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .collapsible-body {
@@ -433,7 +456,6 @@ textarea {
   padding: 0 1rem;
   background-color: #354d5a;
   margin: 15px 0 0;
-
 }
 
 .resume {
@@ -476,10 +498,128 @@ textarea {
 /////////////// @media querys  //////////////////
 /////////////////////////////////////////////////
 
-@media (min-width : 900px) {
+//Phone landscape
+@media screen and (min-width:320px) and (max-width:767px) and (orientation:landscape) {
+
+  #about {
+    margin-top: calc(100vh - 40px);
+  }
+
+  #home .title {
+    margin-top: 6em;
+  }
+
+  .portrait {
+    height: 135px;
+    margin-top: -100px;
+  }
+}
+
+//big phone
+@media (min-width : 375px) {
+
+  .carousel .carousel-item {
+    width: 350px;
+  }
+
+  #projects h1 {
+    margin: 0px 0px 50px;
+  }
 
   .navbar h1 {
     font-size: 1.4em;
+  }
+
+  #home h1 {
+    font-size: 1.2em;
+  }
+
+}
+
+//tablet
+@media (min-width : 700px) {
+
+  .navbar h1 {
+    font-size: 1.9em;
+  }
+
+  #home h1 {
+    font-size: 1.8em;
+  }
+
+  #home a {
+    font-size: 24px;
+  }
+
+  #projects h1 {
+    margin: 0px 0px 70px;
+    font-size: 1.8em;
+  }
+
+  #projects {
+    padding: 170px 0;
+  }
+
+  .aboutme li {
+    font-size: 1.4em;
+  }
+
+  .icon {
+    height: 40px;
+  }
+
+  .content h2 {
+    font-size: 1.5em;
+  }
+
+  .carousel .carousel-item {
+    width: 600px;
+  }
+
+  .c-wrap {
+    width: 100%;
+    padding: 30px 0;
+    margin-top: -65px;
+  }
+
+  .carouselEdit {
+    overflow: visible;
+    height: 520px;
+    transform-style: flat;
+    -webkit-transform-style: flat;
+  }
+
+  .card .card-title {
+    font-size: 28px;
+  }
+
+  #projects a {
+    font-size: 1.8em;
+  }
+
+  #contact h1 {
+    font-size: 2.2em;
+  }
+
+  #contact {
+    padding: 30px 0 60px;
+  }
+
+  .contactinfo h2 {
+    font-size: 1.35em;
+  }
+
+  .title a {
+    font-size: 1.15em;
+  }
+
+}
+
+//full width
+@media (min-width : 900px) {
+
+  .navbar h1 {
+    font-size: 1.7em;
     margin-left: 10px;
   }
 
@@ -489,12 +629,12 @@ textarea {
   }
 
   #home h1 {
-    font-size: 1.3em;
+    font-size: 1.5em;
     font-weight: 700;
   }
 
   #home a {
-    font-size: 1.2em;
+    font-size: 1.3em;
   }
 
   .portrait {
@@ -505,11 +645,12 @@ textarea {
   .content {
     display: flex;
     justify-content: space-between;
-    padding: 50px 10% 50px;
+    padding: 10% 10%;
   }
 
   .content span {
     font-size: 2.5em;
+    list-style: 60px;
   }
 
   .aboutme {
@@ -518,8 +659,7 @@ textarea {
   }
 
   .aboutme li {
-    font-size: 1.4em;
-
+    font-size: 1.48em;
   }
 
   .tech {
@@ -527,7 +667,7 @@ textarea {
   }
 
   .tech p {
-    font-size: 1.2em;
+    font-size: 1.3em;
     font-weight: 300;
   }
 
@@ -561,18 +701,32 @@ textarea {
 
   #projects h1 {
     font-size: 1.8em;
+    margin: 0px 0px 172px;
   }
 
   #projects a {
     font-size: 1.8em;
   }
 
-  .projects-wrapper {
-    padding: 5%;
+  .carousel .carousel-item {
+    width: 850px;
   }
 
-  .projects-row {
-    flex-direction: row;
+  .c-wrap {
+    width: 100%;
+    padding: 30px 0;
+    margin-top: -65px;
+  }
+
+  .carouselEdit {
+    overflow: visible;
+    height: 580px;
+    transform-style: flat;
+    -webkit-transform-style: flat;
+  }
+
+  .content-photos img {
+    height: 250px;
   }
 
   .project {
@@ -583,13 +737,12 @@ textarea {
     margin-bottom: 0px;
   }
 
-  .hidden {
-    visibility: hidden;
-    display: block;
-  }
-
   .card .card-title {
     font-size: 30px;
+  }
+
+  .card-reveal a {
+    font-size: 1.2rem !important;
   }
 
   .currentproject {
@@ -625,18 +778,8 @@ textarea {
   .sendmessage {
     padding: 0 25%;
   }
-}
 
-//Phone landscape
-@media screen and (min-width:320px) and (max-width:767px) and (orientation:landscape) {
-  #about {
-    margin-top: calc(100vh - 40px);
-  }
-  #home .title {
-    margin-top: 6em;
-  }
-  .portrait {
-    height: 135px;
-    margin-top: -100px;
-  }
+  #contact {
+    padding: 90px 0 80px;
+}
 }
