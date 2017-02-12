@@ -42,6 +42,13 @@ $(document).ready(function () {
   //   console.log('moved');
   // })
 
+  // $(".carousel").html($(".carousel").html());
+
+  $(window).resize(function () {
+    setTimeout(function () {
+      location.reload();
+    }, 200);
+  });
 });
 // END JQUERY
 
