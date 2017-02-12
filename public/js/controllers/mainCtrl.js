@@ -38,12 +38,11 @@ $(document).ready(function(){
   //carousel
   $('.carousel').carousel();
 
-  //carousel refresh on reload
-  $(window).resize(function() {
-    setTimeout(function () {
-      location.reload();
-    }, 200);
-  });
+
+  //reload on orientation change
+  $(window).on( "orientationchange", function() {
+    location.reload();
+  })
 
 });
 // END JQUERY
