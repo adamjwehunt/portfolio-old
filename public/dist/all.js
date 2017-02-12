@@ -33,17 +33,7 @@ $(document).ready(function () {
   //carousel
   $('.carousel').carousel();
 
-  // $('.carousel.carousel-slider').carousel({fullWidth: true});
-  //
-  // $(window).resize(function() {
-  //   setTimeout(function () {
-  //     $('.carousel.carousel-slider').carousel({fullWidth: true});
-  //   }, 250);
-  //   console.log('moved');
-  // })
-
-  // $(".carousel").html($(".carousel").html());
-
+  //carousel refresh on reload
   $(window).resize(function () {
     setTimeout(function () {
       location.reload();
