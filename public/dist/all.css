@@ -670,13 +670,14 @@ body {
   text-align: left; }
 
 .card-reveal p {
-  padding: 10px 0; }
+  padding: 5px 0;
+  font-size: .85em; }
 
 .card-reveal a {
   font-size: 1rem !important; }
 
 .card-reveal ul {
-  line-height: 1.2; }
+  font-size: 0.83em; }
 
 .card-reveal img {
   display: none; }
