@@ -678,6 +678,9 @@ body {
 .card-reveal ul {
   line-height: 1.2; }
 
+.card-reveal img {
+  display: none; }
+
 .project-links {
   justify-content: space-between;
   display: flex;
@@ -888,6 +891,8 @@ textarea {
     -webkit-transform-style: flat; }
   .card .card-title {
     font-size: 28px; }
+  .card-reveal img {
+    display: block; }
   #projects a {
     font-size: 1.8em; }
   #contact h1 {
