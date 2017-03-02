@@ -234,8 +234,7 @@ body {
 
 .c-wrap {
   width: 100%;
-  padding: 30px 0;
-  margin-top: -130px;
+
 }
 
 .carousel .carousel-item {
@@ -253,14 +252,14 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 60px 0;
+  padding: 35px 0;
 }
 
 #projects h1 {
   text-transform: uppercase;
   text-align: center;
-  margin: 0px 0px 25px;
-  padding: 25px 0 40px;
+  // margin: 0px 0px 25px;
+  padding: 20px 0 10px;
   color: #fff;
   font-size: 1.3em;
 }
@@ -529,7 +528,7 @@ textarea {
   }
 
   #projects h1 {
-    margin: 0px 0px 50px;
+    // margin: 0px 0px 50px;
   }
 
   .navbar h1 {
@@ -558,12 +557,12 @@ textarea {
   }
 
   #projects h1 {
-    margin: 0px 0px 70px;
+    // margin: 0px 0px 70px;
     font-size: 1.8em;
   }
 
   #projects {
-    padding: 170px 0;
+    padding: 60px 0;
   }
 
   .aboutme li {
@@ -585,7 +584,7 @@ textarea {
   .c-wrap {
     width: 100%;
     padding: 30px 0;
-    margin-top: -65px;
+    margin-top: -50px;
   }
 
   .carouselEdit {
@@ -711,7 +710,7 @@ textarea {
 
   #projects h1 {
     font-size: 1.8em;
-    margin: 0px 0px 172px;
+    padding: 20px 0 40px;
   }
 
   #projects a {
