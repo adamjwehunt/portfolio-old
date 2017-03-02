@@ -22,6 +22,8 @@
      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css" />
     <link rel='stylesheet' href='./dist/all.css'/>
   </head>
   <body>
@@ -206,9 +208,67 @@
 
         <!-- CAROUSEL -->
         <div class="c-wrap">
-          <div class="carousel carouselEdit center" data-indicators="true" id='target'>
+          <div class="owl-carousel owl-theme" data-indicators="true" id='target'>
+            <!-- Etq -->
+            <div class='item project'>
+              <div class="card z-depth-3">
+                <div class="card-image waves-effect waves-block">
+                  <img class="activator" src="./img/etq/main.jpg">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">etqClone | Ecommerce
+                    <i class="material-icons right">more_vert
+                    </i>
+                  </span>
+                  <div class='project-links'>
+                    <p>
+                      <a target="_blank" href="https://github.com/ajwehunt/etqClone">code
+                        <i class="fa fa-code" aria-hidden="true">
+                        </i>
+                      </a>
+                    </p>
+                    <p>
+                      <a target="_blank" href="http://www.etqclone.site">
+                        <i class="fa fa-globe" aria-hidden="true">
+                        </i> live
+                      </a>
+                    </p>
+                  </div>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">etqClone
+                    <i class="material-icons right">close
+                    </i>
+                  </span>
+                  <div class='content-tech'>
+                    <div>AngularJs
+                    </div>
+                    <div>NodeJs
+                    </div>
+                    <div>Express
+                    </div>
+                    <div>SQL
+                    </div>
+                  </div>
+                  <div class="content-descrip">
+                    <p>• Cloned http://etq-amsterdam.com, emphasizing mobile design and backend product management
+                    </p>
+                    <p>• Focused on clean animations using jQuery to give users a smooth, fluid experience
+                    </p>
+                    <p>• Challenge: Utilizing the backend to manage the shopping cart and checkout
+                    </p>
+                  </div>
+                  <div class="content-photos">
+                    <img src="./img/etq/mobile1.jpg">
+                    <img src="./img/etq/mobile2.jpg">
+                    <img src="./img/etq/mobile3.jpg">
+                    <img src="./img/etq/main2.jpg">
+                  </div>
+                </div>
+              </div>
+            </div>
             <!-- StarJarGirl -->
-            <div class='carousel-item project'>
+            <div class='item project'>
               <div class="card z-depth-3">
                 <div class="card-image waves-effect waves-block">
                   <img class="activator" src="./img/star/main.jpg">
@@ -251,7 +311,7 @@
                   <div class="content-descrip">
                     <p>• Single-page ecommerce site for my Fiance</p>
                     <p>• Main focus will be UI/UX</p>
-                    <p>• Check in and see how its going</p>
+                    <p>• Work in Progress</p>
                   </div>
                   <div class="content-photos">
                     <img src="./img/star/scrnsht.jpg">
@@ -260,7 +320,7 @@
               </div>
             </div>
             <!-- Mini Projects -->
-            <div class='carousel-item project'>
+            <div class='item project'>
               <div class="card z-depth-3">
                 <div class="card-image waves-effect waves-block">
                   <img class="activator" src="./img/minis/main.jpg">
@@ -332,66 +392,8 @@
                 </div>
               </div>
             </div>
-            <!-- Etq -->
-            <div class='carousel-item project'>
-              <div class="card z-depth-3">
-                <div class="card-image waves-effect waves-block">
-                  <img class="activator" src="./img/etq/main.jpg">
-                </div>
-                <div class="card-content">
-                  <span class="card-title activator grey-text text-darken-4">etqClone | Ecommerce
-                    <i class="material-icons right">more_vert
-                    </i>
-                  </span>
-                  <div class='project-links'>
-                    <p>
-                      <a target="_blank" href="https://github.com/ajwehunt/etqClone">code
-                        <i class="fa fa-code" aria-hidden="true">
-                        </i>
-                      </a>
-                    </p>
-                    <p>
-                      <a target="_blank" href="http://www.etqclone.site">
-                        <i class="fa fa-globe" aria-hidden="true">
-                        </i> live
-                      </a>
-                    </p>
-                  </div>
-                </div>
-                <div class="card-reveal">
-                  <span class="card-title grey-text text-darken-4">etqClone
-                    <i class="material-icons right">close
-                    </i>
-                  </span>
-                  <div class='content-tech'>
-                    <div>AngularJs
-                    </div>
-                    <div>NodeJs
-                    </div>
-                    <div>Express
-                    </div>
-                    <div>SQL
-                    </div>
-                  </div>
-                  <div class="content-descrip">
-                    <p>• Cloned http://etq-amsterdam.com, emphasizing mobile design and backend product management
-                    </p>
-                    <p>• Focused on clean animations using jQuery to give users a smooth, fluid experience
-                    </p>
-                    <p>• Challenge: Utilizing the backend to manage the shopping cart and checkout
-                    </p>
-                  </div>
-                  <div class="content-photos">
-                    <img src="./img/etq/mobile1.jpg">
-                    <img src="./img/etq/mobile2.jpg">
-                    <img src="./img/etq/mobile3.jpg">
-                    <img src="./img/etq/main2.jpg">
-                  </div>
-                </div>
-              </div>
-            </div>
             <!-- Shyft -->
-            <div class='carousel-item project'>
+            <div class='item project'>
               <div class="card z-depth-3">
                 <div class="card-image waves-effect waves-block">
                   <img class="activator" src="./img/shyft/main.jpg">
@@ -584,6 +586,7 @@
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.4/typed.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
     <script type='text/javascript' src='./dist/all.js'></script>
   </body>
 </html>

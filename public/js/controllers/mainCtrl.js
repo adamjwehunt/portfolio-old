@@ -36,8 +36,25 @@ $(document).ready(function(){
 
 
   //carousel
-  $('.carousel').carousel();
-
+  // $('.carousel').carousel();
+  //
+  // $('.carousel.carousel-slider').carousel({fullWidth: true})
+  $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    center:true,
+    responsive:{
+        0:{
+            items:1.15
+        },
+        600:{
+            items:2
+        },
+        1000:{
+            items:2
+        }
+    }
+})
 
   //reload on orientation change
   $(window).on( "orientationchange", function() {

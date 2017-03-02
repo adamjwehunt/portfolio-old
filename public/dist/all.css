@@ -622,9 +622,7 @@ body {
   -webkit-transform-style: flat; }
 
 .c-wrap {
-  width: 100%;
-  padding: 30px 0;
-  margin-top: -130px; }
+  width: 100%; }
 
 .carousel .carousel-item {
   width: 295px; }
@@ -639,13 +637,12 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 60px 0; }
+  padding: 35px 0; }
 
 #projects h1 {
   text-transform: uppercase;
   text-align: center;
-  margin: 0px 0px 25px;
-  padding: 25px 0 40px;
+  padding: 20px 0 10px;
   color: #fff;
   font-size: 1.3em; }
 
@@ -854,8 +851,6 @@ textarea {
 @media (min-width: 375px) {
   .carousel .carousel-item {
     width: 350px; }
-  #projects h1 {
-    margin: 0px 0px 50px; }
   .navbar h1 {
     font-size: 1.4em; }
   #home h1 {
@@ -869,10 +864,9 @@ textarea {
   #home a {
     font-size: 24px; }
   #projects h1 {
-    margin: 0px 0px 70px;
     font-size: 1.8em; }
   #projects {
-    padding: 170px 0; }
+    padding: 60px 0; }
   .aboutme li {
     font-size: 1.4em; }
   .icon {
@@ -884,7 +878,7 @@ textarea {
   .c-wrap {
     width: 100%;
     padding: 30px 0;
-    margin-top: -65px; }
+    margin-top: -50px; }
   .carouselEdit {
     overflow: visible;
     height: 520px;
@@ -953,7 +947,7 @@ textarea {
     height: 35px; }
   #projects h1 {
     font-size: 1.8em;
-    margin: 0px 0px 172px; }
+    padding: 20px 0 40px; }
   #projects a {
     font-size: 1.8em; }
   .carousel .carousel-item {
