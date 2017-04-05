@@ -48,40 +48,52 @@ $(document).ready(function () {
         items: 1.15
       },
       360: {
-        margin: 15,
-        items: 1.25
+        items: 1.25,
+        margin: 15
       },
       450: {
-        margin: 30,
-        items: 1.5
+        items: 1.3,
+        margin: 30
       },
       500: {
-        items: 1.7,
+        items: 1.4,
         margin: 40
       },
       600: {
-        items: 1.8,
+        items: 1.5,
         margin: 50
       },
       700: {
-        items: 1.9,
-        margin: 60
-      },
-      900: {
-        items: 2,
+        items: 1.6,
         margin: 100
       },
-      1100: {
-        items: 2.2,
+      900: {
+        items: 1.7,
         margin: 150
       },
+      1100: {
+        items: 1.8,
+        margin: 250
+      },
+      1200: {
+        items: 1.9,
+        margin: 300
+      },
       1300: {
-        items: 2.6,
-        margin: 200
+        items: 2.05,
+        margin: 325
+      },
+      1400: {
+        items: 2.08,
+        margin: 375
+      },
+      1500: {
+        items: 2.1,
+        margin: 425
       },
       1600: {
-        items: 2.8,
-        margin: 220
+        items: 2.2,
+        margin: 475
       }
     }
   });

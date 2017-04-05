@@ -428,6 +428,13 @@ a, a:active, .navigation div, .collapsible, a:hover, a:visited, .totop {
 a:active, a:hover, .navigation div:active, .navigation div:hover, .collapsible:hover, .collapsible:active, .totop:hover, .totop:active {
   color: #fff; }
 
+body:before {
+  content: '';
+  background: url(../img/vsubs/main.jpg), url(../img/etq/main.jpg), url(../img/star/main.jpg), url(../img/star/main.jpg), url(../img/minis/main.jpg), url(../img/shyft/main.jpg), url(../img/zen/main.jpg);
+  width: 0;
+  height: 0;
+  visibility: hidden; }
+
 body {
   /* Better Font Rendering */
   text-rendering: optimizeLegibility;
@@ -621,8 +628,7 @@ body {
 
 .project-wrap {
   width: 100%;
-  height: 460px;
-  background: #000; }
+  height: 460px; }
 
 .project-bg {
   position: absolute;
@@ -640,10 +646,10 @@ body {
   -moz-filter: brightness(45%); }
 
 .bg3, .bg9 {
-  background: url(../img/vsubs/main.jpg) no-repeat 4% 7%; }
+  background: url(../img/vsubs/main.jpg) no-repeat 25% 45%; }
 
 .bg4 {
-  background: url(../img/etq/main.jpg) no-repeat 26% 0%; }
+  background: url(../img/etq/main.jpg) no-repeat 47% 53%; }
 
 .bg5 {
   background: url(../img/star/main.jpg) no-repeat center 24%; }
@@ -651,11 +657,11 @@ body {
 .bg6 {
   background: url(../img/minis/main.jpg) no-repeat center 43%; }
 
-.bg7 {
-  background: url(../img/shyft/main.jpg) no-repeat center 30%; }
+.bg7, .bg1 {
+  background: url(../img/shyft/main.jpg) no-repeat 50% 57%; }
 
 .bg8, .bg2 {
-  background: url(../img/zen/main.jpg) no-repeat center 79%; }
+  background: url(../img/zen/main.jpg) no-repeat center 48%; }
 
 .project-card {
   height: 252px;
@@ -672,6 +678,16 @@ body {
 .project-card h4 {
   font-size: 13px;
   margin-bottom: 7px; }
+
+.owl-item {
+  filter: brightness(75%);
+  -webkit-filter: brightness(75%);
+  -moz-filter: brightness(75%); }
+
+.owl-item.active.center {
+  filter: brightness(100%);
+  -webkit-filter: brightness(100%);
+  -moz-filter: brightness(100%); }
 
 .content-tech {
   display: flex;
@@ -892,18 +908,20 @@ textarea {
     font-size: 26px; } }
 
 @media (min-width: 600px) {
-  .bg8, .bg2 {
-    background: url(../img/zen/main.jpg) no-repeat center 30%; }
   .bg3, .bg9 {
-    background: url(../img/vsubs/main.jpg) no-repeat 50% 30%; }
+    background: url(../img/vsubs/main.jpg) no-repeat center center; }
   .bg4 {
-    background: url(../img/etq/main.jpg) no-repeat 50% 29%; }
+    background: url(../img/etq/main.jpg) no-repeat center center; }
   .bg5 {
-    background: url(../img/star/main.jpg) no-repeat center 31%; }
+    background: url(../img/star/main.jpg) no-repeat center center; }
   .bg6 {
-    background: url(../img/minis/main.jpg) no-repeat center 30%; }
+    background: url(../img/minis/main.jpg) no-repeat center center; }
+  .bg7, .bg1 {
+    background: url(../img/shyft/main.jpg) no-repeat center center; }
+  .bg8, .bg2 {
+    background: url(../img/zen/main.jpg) no-repeat center center; }
   .project-wrap {
-    height: 669px; }
+    height: 732px; }
   .project-bg {
     height: 733px; }
   .navbar h1 {
@@ -970,7 +988,7 @@ textarea {
   .project-bg {
     height: 757px; }
   .project-wrap {
-    height: 700px; }
+    height: 814px; }
   .project-card {
     margin-top: 174px;
     height: 350px;
