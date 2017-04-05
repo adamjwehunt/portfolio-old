@@ -28,19 +28,19 @@
   </head>
   <body>
     <!-- NAVBAR -->
-    <header class='navbar z-depth-3'>
-      <h1 onclick='scrollTo(0)'>Adam Wehunt
+    <header class='navbar z-depth-1'>
+      <h1 onclick='scrollTo(0, 0)'>Adam Wehunt
       </h1>
       <div class="navigation">
-        <div class="nav-about" onclick="scrollTo('#portrait')">
+        <div class="nav-about" onclick="scrollTo('#portrait', 45)">
           <h1>about
           </h1>
         </div>
-        <div class="nav-projects" onclick="scrollTo('#projects')">
-          <h1>projects
+        <div class="nav-projects" onclick="scrollTo('#projects', 35)">
+          <h1>portfolio
           </h1>
         </div>
-        <div class="nav-contact" onclick="scrollTo('#contact')">
+        <div class="nav-contact" onclick="scrollTo('#contact', 0)">
           <h1>contact
           </h1>
         </div>
@@ -54,18 +54,18 @@
           </h1>
           <h1>·  UX Enthusiast  ·
           </h1>
-          <h1> Resource Zealot
+          <h1> Software Engineer
           </h1>
           <br>
-          <a onclick="scrollTo('#contact')">Contact
+          <a onclick="scrollTo('#contact', 0)">Contact
           </a>
-          <a onclick="scrollTo('#projects')">Portfolio
+          <a onclick="scrollTo('#projects', 35)">Portfolio
           </a>
         </div>
       </section>
       <!-- ABOUT -->
-      <section class='panel z-depth-2' id='about'>
-        <img class='portrait z-depth-2' id='portrait' src='./img/portrait.jpg'>
+      <section class='panel z-depth-1' id='about'>
+        <img class='portrait z-depth-1' id='portrait' src='./img/portrait.jpg'>
         <div class='content'>
           <div class='aboutme'>
             <span class='hithere'></span>
@@ -199,318 +199,251 @@
         </div>
       </section>
       <!-- PROJECTS -->
-      <section class='panel z-depth-2' id='projects'>
+      <section class='panel z-depth-1' id='projects'>
         <!-- TITLE -->
         <div>
-          <h1>Projects
+          <h1>Portfolio
           </h1>
         </div>
 
         <!-- CAROUSEL -->
-        <div class="c-wrap">
+        <div class="project-wrap">
+          <div class="project-bg bg3" id='project-bg'>
+          </div>
           <div class="owl-carousel owl-theme" data-indicators="true" id='target'>
-            <!-- Etq -->
-            <div class='item project'>
-              <div class="card z-depth-3">
-                <div class="card-image waves-effect waves-block">
-                  <img class="activator" src="./img/etq/main.jpg">
+            <!-- vSubs -->
+            <div class="item project-card z-depth-1">
+              <h3>vSubs
+              </h3>
+              <h4>Interactive subtitles for Youtube
+              </h4>
+              <div class='content-tech'>
+                <div>ReactJs
                 </div>
-                <div class="card-content">
-                  <span class="card-title activator grey-text text-darken-4">etqClone | Ecommerce
-                    <i class="material-icons right">more_vert
+                <div>NodeJs
+                </div>
+                <div>Youtube api
+                </div>
+                <div>Webpack
+                </div>
+              </div>
+              <div class="content-descrip">
+                <p>• Solution for finding keywords in long tutorials and talks
+                </p>
+                <p>• Subtitles auto-scroll as video plays
+                </p>
+                <p>• Clicking on phrases jumps to spot in video
+                </p>
+              </div>
+              <div class='project-links'>
+                <p>
+                  <a target="_blank" href="https://github.com/ajwehunt/vsubs">code
+                    <i class="fa fa-code" aria-hidden="true">
                     </i>
-                  </span>
-                  <div class='project-links'>
-                    <p>
-                      <a target="_blank" href="https://github.com/ajwehunt/etqClone">code
-                        <i class="fa fa-code" aria-hidden="true">
-                        </i>
-                      </a>
-                    </p>
-                    <p>
-                      <a target="_blank" href="http://www.etqclone.site">
-                        <i class="fa fa-globe" aria-hidden="true">
-                        </i> live
-                      </a>
-                    </p>
-                  </div>
+                  </a>
+                </p>
+                <p>
+                  <a target="_blank" href="http://www.vsubs.com">
+                    <i class="fa fa-globe" aria-hidden="true">
+                    </i> live
+                  </a>
+                </p>
+              </div>
+            </div>
+            <!-- ETQ -->
+            <div class="item project-card z-depth-1">
+              <h3>etqClone
+              </h3>
+              <h4>Mobile Ecommerce
+              </h4>
+              <div class='content-tech'>
+                <div>AngularJs
                 </div>
-                <div class="card-reveal">
-                  <span class="card-title grey-text text-darken-4">etqClone
-                    <i class="material-icons right">close
+                <div>NodeJs
+                </div>
+                <div>Express
+                </div>
+                <div>SQL
+                </div>
+              </div>
+              <div class="content-descrip">
+                <p>• Cloned etq-amsterdam.com, emphasizing mobile design and backend product management
+                </p>
+                <p>• Focused on clean animation using jQuery to provide a fluid user experience
+                </p>
+                <p>• Utilized the backend to manage the shopping cart and checkout
+                </p>
+              </div>
+              <div class='project-links'>
+                <p>
+                  <a target="_blank" href="https://github.com/ajwehunt/etqClone">code
+                    <i class="fa fa-code" aria-hidden="true">
                     </i>
-                  </span>
-                  <div class='content-tech'>
-                    <div>AngularJs
-                    </div>
-                    <div>NodeJs
-                    </div>
-                    <div>Express
-                    </div>
-                    <div>SQL
-                    </div>
-                  </div>
-                  <div class="content-descrip">
-                    <p>• Cloned http://etq-amsterdam.com, emphasizing mobile design and backend product management
-                    </p>
-                    <p>• Focused on clean animations using jQuery to give users a smooth, fluid experience
-                    </p>
-                    <p>• Challenge: Utilizing the backend to manage the shopping cart and checkout
-                    </p>
-                  </div>
-                  <div class="content-photos">
-                    <img src="./img/etq/mobile1.jpg">
-                    <img src="./img/etq/mobile2.jpg">
-                    <img src="./img/etq/mobile3.jpg">
-                    <img src="./img/etq/main2.jpg">
-                  </div>
-                </div>
+                  </a>
+                </p>
+                <p>
+                  <a target="_blank" href="http://www.etqclone.site">
+                    <i class="fa fa-globe" aria-hidden="true">
+                    </i> live
+                  </a>
+                </p>
               </div>
             </div>
             <!-- StarJarGirl -->
-            <div class='item project'>
-              <div class="card z-depth-3">
-                <div class="card-image waves-effect waves-block">
-                  <img class="activator" src="./img/star/main.jpg">
+            <div class="item project-card z-depth-1">
+              <h3>Star Jar Girl
+              </h3>
+              <h4>Ecommerce
+              </h4>
+              <div class='content-tech'>
+                <div>ReactJs
                 </div>
-                <div class="card-content">
-                  <span class="card-title activator grey-text text-darken-4">StarJarGirl | Ecommerce
-                    <i class="material-icons right" id='cardBtn'>more_vert
+                <div>NodeJs
+                </div>
+                <div>Express
+                </div>
+                <div>SQL
+                </div>
+              </div>
+              <div class="content-descrip">
+                <p>• Development in progress
+                </p>
+                <p>• Single page ecommerce website featuring products made by my fiance
+                </p>
+                <p>• Main focus will be UI/UX in a React/Redux environment
+                </p>
+              </div>
+              <div class='project-links'>
+                <p>
+                  <a target="_blank" href="https://github.com/ajwehunt/starjargirl">code
+                    <i class="fa fa-code" aria-hidden="true">
                     </i>
-                  </span>
-                  <div class='project-links'>
-                    <p>
-                      <a target="_blank" href="https://github.com/ajwehunt/starjargirl">code
-                        <i class="fa fa-code" aria-hidden="true">
-                        </i>
-                      </a>
-                    </p>
-                    <p>
-                      <a target="_blank" href="http://www.starjargirl.com">
-                        <i class="fa fa-globe" aria-hidden="true">
-                        </i> live
-                      </a>
-                    </p>
-                  </div>
-                </div>
-                <div class="card-reveal">
-                  <span class="card-title grey-text text-darken-4">Star Jar Girl
-                    <i class="material-icons right">close
-                    </i>
-                  </span>
-                  <div class='content-tech'>
-                    <div>AngularJs
-                    </div>
-                    <div>NodeJs
-                    </div>
-                    <div>Express
-                    </div>
-                    <div>SQL
-                    </div>
-                  </div>
-                  <div class="content-descrip">
-                    <p>• Single-page ecommerce site for my Fiance</p>
-                    <p>• Main focus will be UI/UX</p>
-                    <p>• Work in Progress</p>
-                  </div>
-                  <div class="content-photos">
-                    <img src="./img/star/scrnsht.jpg">
-                  </div>
-                </div>
+                  </a>
+                </p>
+                <p>
+                  <a target="_blank" href="http://www.starjargirl.com">
+                    <i class="fa fa-globe" aria-hidden="true">
+                    </i> live
+                  </a>
+                </p>
               </div>
             </div>
             <!-- Mini Projects -->
-            <div class='item project'>
-              <div class="card z-depth-3">
-                <div class="card-image waves-effect waves-block">
-                  <img class="activator" src="./img/minis/main.jpg">
+            <div class="item project-card z-depth-1">
+              <h3>Mini Projects & Tech Interests
+              </h3>
+              <div class='content-tech'>
+                <div>VueJs
                 </div>
-                <div class="card-content">
-                  <span class="card-title activator grey-text text-darken-4">Mini Projects
-                    <i class="material-icons right">more_vert
-                    </i>
-                  </span>
-                  <div class='project-links'>
-                    <p class='codelink'>
-                      <a target="_blank" href="https://github.com/ajwehunt">code
-                        <i class="fa fa-code" aria-hidden="true">
-                        </i>
-                      </a>
-                    </p>
-                    <p>
-                      <a target="_blank" href="https://www.codewars.com/users/ajwehunt">
-                        <i class="fa fa-globe" aria-hidden="true">
-                        </i> codewars
-                      </a>
-                    </p>
-                  </div>
+                <div>BackboneJs
                 </div>
-                <div class="card-reveal">
-                  <span class="card-title grey-text text-darken-4">Mini Projects & Tech Interests
-                    <i class="material-icons right">close
-                    </i>
-                  </span>
-                  <div class='content-tech'>
-                    <div>VueJs
-                    </div>
-                    <div>BackboneJs
-                    </div>
-                    <div>EmberJs
-                    </div>
-                    <div>Angular 2
-                    </div>
-                    <div>TypeScript
-                    </div>
-                    <div>C#
-                    </div>
-                  </div>
+                <div>EmberJs
+                </div>
+                <div>Angular 2
+                </div>
+                <div>TypeScript
+                </div>
+                <div>C#
+                </div>
+              </div>
+              <div class="content-descrip">
+                <p>• Toy Problems:
                   <br>
-                  <ul>Toy Problems
-                    <li>• Coding exercises from Codewars.com
-                    </li>
-                    <li>
-                    </li>•
-                    <a target="_blank" href="https://github.com/ajwehunt/toyProblems">Github
-                    </a> |
-                    <a target="_blank" href="https://www.codewars.com/users/ajwehunt">Codewars Profile</a>
-                  </ul>
+                  <a target="_blank" href="https://github.com/ajwehunt/toyProblems">Github
+                  </a>  |
+                  <a target="_blank" href="https://www.codewars.com/users/ajwehunt">Codewars Profile</a>
+                </p>
+                <p>• Pizza Client: Interview challenge UI built from existing server
                   <br>
-                  <ul>Pizza Coding Challenge | Feb 2017
-                    <li>• Recent project assigned as an interview challenge.
-                    </li>
-                    <li>• Used the company's server to build a pizza making app.
-                    </li>
-                    <li>
-                    </li>•
-                    <a target="_blank" href="https://github.com/ajwehunt/pizzaClient">Github
-                    </a> |
-                    <a target="_blank" href="http://107.170.74.97:8090/">Live Site</a>
-                  </ul>
-                  <div class="content-photos">
-                    <img src="./img/minis/scrnsht.jpg">
-                  </div>
-                </div>
+                  <a target="_blank" href="https://github.com/ajwehunt/pizzaClient">Github
+                  </a>  |
+                  <a target="_blank" href="http://107.170.74.97:8090/">Live Site</a>
+                </p>
+                <p>• Ruby Api: Added external 'orders' api for Pizza client
+                  <br>
+                  <a target="_blank" href="https://github.com/ajwehunt/api-pizzaClient">Github
+                  </a>
               </div>
             </div>
             <!-- Shyft -->
-            <div class='item project'>
-              <div class="card z-depth-3">
-                <div class="card-image waves-effect waves-block">
-                  <img class="activator" src="./img/shyft/main.jpg">
+            <div class="item project-card z-depth-1">
+              <h3>Shyft
+              </h3>
+              <h4>Lyft.com Clone
+              </h4>
+              <div class='content-tech'>
+                <div>ReactJs
                 </div>
-                <div class="card-content">
-                  <span class="card-title activator grey-text text-darken-4">Shyft | Lyft.com Clone
-                    <i class="material-icons right">more_vert
-                    </i>
-                  </span>
-                  <div class='project-links'>
-                    <p class='codelink'><a target="_blank" href="https://github.com/ajwehunt/shyft">code
-                      <i class="fa fa-code" aria-hidden="true">
-                      </i>
-                    </a>
-                  </p>
-                  <p>
-                    <a target="_blank" href="http://www.shyft.site">
-                      <i class="fa fa-globe" aria-hidden="true">
-                      </i> live
-                    </a>
-                  </p>
+                <div>NodeJs
+                </div>
+                <div>Express
+                </div>
+                <div>SQL
                 </div>
               </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">Shyft
-                  <i class="material-icons right">close
-                  </i>
-                </span>
-                <div class='content-tech'>
-                  <div>ReactJs
-                  </div>
-                  <div>NodeJs
-                  </div>
-                  <div>Express
-                  </div>
-                  <div>SQL
-                  </div>
-                </div>
+              <div class="content-descrip">
                 <p>• Four-person project cloning lyft.com, integrating Lyft's mobile app into a browser
                 </p>
                 <p>• Pixel-perfect and mobile responsive with Bootstrap
                 </p>
-                <p>• Challenge: Learning ReactJs to complete the project MVP in 3 weeks
+              </div>
+              <div class='project-links'>
+                <p class='codelink'>
+                  <a target="_blank" href="https://github.com/ajwehunt/shyft">code
+                    <i class="fa fa-code" aria-hidden="true">
+                    </i>
+                  </a>
                 </p>
-                <div class="content-photos">
-                  <img src="./img/shyft/scrnsht1.jpg">
-                </div>
-                <div class="content-photos">
-                  <img src="./img/shyft/mobile.jpg">
-                  <img src="./img/shyft/mobile1.jpg">
-                </div>
+                <p>
+                  <a target="_blank" href="http://www.shyft.site">
+                    <i class="fa fa-globe" aria-hidden="true">
+                    </i> live
+                  </a>
+                </p>
               </div>
             </div>
-          </div>
             <!-- Zen water art -->
-            <div class='carousel-item project'>
-            <div class="card z-depth-3">
-              <div class="card-image waves-effect waves-block">
-                <img class="activator" src="./img/zen/main.jpg">
-              </div>
-              <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">ZenWaterArt | Paint App
-                  <i class="material-icons right">more_vert
-                  </i>
-                </span>
-                <div class='project-links'>
-                  <p>
-                    <a target="_blank" href="https://github.com/ajwehunt/zenwaterart">code
-                      <i class="fa fa-code" aria-hidden="true">
-                      </i>
-                    </a>
-                  </p>
-                  <p>
-                    <a target="_blank" href="http://www.zenwaterart.site">
-                      <i class="fa fa-globe" aria-hidden="true">
-                      </i> live
-                    </a>
-                  </p>
+            <div class="item project-card z-depth-1">
+              <h3>Zen Water Art
+              </h3>
+              <h4>Paint app
+              </h4>
+              <div class='content-tech'>
+                <div>AngularJs
+                </div>
+                <div>CSS3
+                </div>
+                <div>Canvas
+                </div>
+                <div>Node
                 </div>
               </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">Zen Water Art
-                  <i class="material-icons right">close
-                  </i>
-                </span>
-                <div class='content-tech'>
-                  <div>AngularJs
-                  </div>
-                  <div>CSS3
-                  </div>
-                  <div>Html5 Canvas
-                  </div>
-                  <div>Node
-                  </div>
-                </div>
-                <div class="content-descrip">
-                  <p>• Used Canvas to simulate the popular art product, BuddhaBoard
-                  </p>
-                  <p>• Main focus was coding each brush signature with a fade effect
-                  </p>
-                  <p>• Challenge: Manipulating and understanding Canvas
-                  </p>
-                </div>
-                <div class="content-photos">
-                  <img src="./img/zen/mobile.jpg">
-                  <img src="./img/zen/mobile1.jpg">
-                  <img src="./img/zen/scrnsht1.jpg">
-                  <img src="./img/zen/scrnsht2.jpg">
-                </div>
+              <div class="content-descrip">
+                <p>• Used Canvas to simulate the popular art product, BuddhaBoard
+                </p>
+                <p>• Main focus was coding each brush signature with a fade effect
+                </p>
+              </div>
+              <div class='project-links'>
+                <p>
+                  <a target="_blank" href="https://github.com/ajwehunt/zenwaterart">code
+                    <i class="fa fa-code" aria-hidden="true">
+                    </i>
+                  </a>
+                </p>
+                <p>
+                  <a target="_blank" href="http://www.zenwaterart.site">
+                    <i class="fa fa-globe" aria-hidden="true">
+                    </i> live
+                  </a>
+                </p>
               </div>
             </div>
-          </div>
           </div>
         </div>
       </section>
       <!-- CONTACT -->
-      <footer class='panel z-depth-2' id='contact'>
+      <footer class='panel z-depth-1' id='contact'>
         <div class="contact-content">
           <div class='title'>
             <h1>Let's get in touch
@@ -548,7 +481,7 @@
           <div class="sendmessage">
             <ul class="collapsible">
               <li>
-                <div class="collapsible-header z-depth-2" onclick="scrollToDelayed('#copyright')">Send me a Message
+                <div class="collapsible-header z-depth-1" onclick="scrollToDelayed('#copyright', 0)">Send me a Message
                 </div>
                 <div class="collapsible-body animated flipInX">
                   <form method="POST" action="http://formspree.io/adamjwehunt@gmail.com">
@@ -577,16 +510,15 @@
         <h2>© 2016-2017 Adam Wehunt
         </h2>
         <div>
-          <i class="fa fa-arrow-circle-up totop" aria-hidden="true" onclick='scrollTo(0)'>
+          <i class="fa fa-arrow-circle-up totop" aria-hidden="true" onclick='scrollTo(0, 0)'>
           </i>
         </div>
       </footer>
     </div>
     <!--  -->
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.4/typed.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
     <script type='text/javascript' src='./dist/all.js'></script>
   </body>
 </html>

@@ -18,5 +18,8 @@
   "homepage": "https://github.com/ajwehunt/portfolio#readme",
   "devDependencies": {
     "bower": "^1.8.0"
+  },
+  "dependencies": {
+    "modernizr": "^3.4.0"
   }
 }
