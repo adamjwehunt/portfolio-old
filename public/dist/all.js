@@ -47,13 +47,41 @@ $(document).ready(function () {
       0: {
         items: 1.15
       },
-      600: {
-        items: 2,
-        margin: 30
+      360: {
+        margin: 15,
+        items: 1.25
       },
-      1000: {
-        items: 2,
+      450: {
+        margin: 30,
+        items: 1.5
+      },
+      500: {
+        items: 1.7,
+        margin: 40
+      },
+      600: {
+        items: 1.8,
+        margin: 50
+      },
+      700: {
+        items: 1.9,
         margin: 60
+      },
+      900: {
+        items: 2,
+        margin: 100
+      },
+      1100: {
+        items: 2.2,
+        margin: 150
+      },
+      1300: {
+        items: 2.6,
+        margin: 200
+      },
+      1600: {
+        items: 2.8,
+        margin: 220
       }
     }
   });
