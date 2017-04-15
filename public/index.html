@@ -29,18 +29,18 @@
   <body>
     <!-- NAVBAR -->
     <header class='navbar z-depth-1'>
-      <h1 onclick='scrollTo(0, 0)'>Adam Wehunt
+      <h1 class='topLink'>Adam Wehunt
       </h1>
       <div class="navigation">
-        <div class="nav-about" onclick="scrollTo('#portrait', 45)">
+        <div class="nav-about aboutLink">
           <h1>about
           </h1>
         </div>
-        <div class="nav-projects" onclick="scrollTo('#projects', 35)">
+        <div class="nav-projects projectsLink">
           <h1>portfolio
           </h1>
         </div>
-        <div class="nav-contact" onclick="scrollTo('#contact', 0)">
+        <div class="nav-contact contactLink">
           <h1>contact
           </h1>
         </div>
@@ -57,9 +57,9 @@
           <h1> Software Engineer
           </h1>
           <br>
-          <a onclick="scrollTo('#contact', 0)">Contact
+          <a class='contactLink'>Contact
           </a>
-          <a onclick="scrollTo('#projects', 35)">Portfolio
+          <a class='projectsLink'>Portfolio
           </a>
         </div>
       </section>
@@ -481,7 +481,7 @@
           <div class="sendmessage">
             <ul class="collapsible">
               <li>
-                <div class="collapsible-header z-depth-1" onclick="scrollToDelayed('#copyright', 0)">Send me a Message
+                <div class="collapsible-header z-depth-1 bottomLink">Send me a Message
                 </div>
                 <div class="collapsible-body animated flipInX">
                   <form method="POST" action="http://formspree.io/adamjwehunt@gmail.com">
@@ -510,13 +510,15 @@
         <h2>© 2016-2017 Adam Wehunt
         </h2>
         <div>
-          <i class="fa fa-arrow-circle-up totop" aria-hidden="true" onclick='scrollTo(0, 0)'>
+          <i class="fa fa-arrow-circle-up totop topLink" aria-hidden="true">
           </i>
         </div>
       </footer>
     </div>
     <!--  -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script type="text/javascript"
+    src='extras/owl.carousel.min.js'></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.4/typed.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
     <script type='text/javascript' src='./dist/all.js'></script>
